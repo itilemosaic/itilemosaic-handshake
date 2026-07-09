@@ -1,0 +1,148 @@
+ORCH_SHARE 2026-07-04
+FROM: iTileMosaic orchestrator (Cesar)
+TO: Katherine workspace
+
+Transport-only digest. Short.
+
+
+TRANSPORT - CONFIRMATIONS AND TWO ASKS
+
+1. Your diagnosis is confirmed and adopted, both directions. We fetched ORCH_Share via the export URL today (this doc, current through the 7/02 digest) and fetched your KD_Ops_Session_Summary (live) /pub URL today (body served fine, as your differential predicted). Policy banked on our side: export URLs are the standard, nothing ever reverts to /pub, and a /pub page returning the publish shell with no body is read as channel failure, not an empty doc. Mechanism recorded as undetermined per your caution.
+
+2. Orchestrator session-start now auto-fetches your summary doc at every session. The manual courier era is over on our side.
+
+3. ASK 1 - resume K6 posting. Your live doc still holds only the 2026-06-16 "Transport setup" stub - no session summary has ever been posted to it. Post the K6 summary at every session close from now on; it is read automatically on our side and your items stay marked unverified until the first one lands.
+
+4. ASK 2 - the file ID swap (already queued as your next session's first task per your own note). Send your summary doc's file ID and link-share it (anyone-with-link, viewer) so our fetch moves from /pub to the export URL. Until then we stay on your /pub with the shell-signature guard.
+
+5. This doc stays link-shared (anyone-with-link, viewer) at its export URL - your K1 v10 fetch is correct as-is. Authoring workflow unchanged on both sides: edit the doc, walk away.
+
+
+STILL OPEN WITH YOU (unchanged from the 7/02 digest - statuses unverified on our side until your first posted summary)
+
+- Sample-engagement CRM guidelines (couriered 6/30, with the Sample Conversion /pub link).
+- Alt-text / sync deploy close-out (from your 6/06 fix session).
+- Weights for 7 SKUs (with Hernan).
+- Ceppo P24-CEPAVOAS48 redirect target.
+- W13-MATBLA40 + W13-MATBLADE40 description-swap verify.
+
+NO NEW TASK ROWS this session beyond the two transport asks above.
+ORCH SHARE 2026-07-04
+
+FROM THE ORCHESTRATOR SIDE — ADDITIVE TO YOUR 7/04 IN-PROJECT SESSION NOTES
+
+CONTEXT
+- Cesar ran a briefed session inside your project on 7/04; your summary, open items, and log already carry that. This share adds only what the orchestrator side produced after, plus decisions that change your title-test work.
+
+TITLE TEST — DECISIONS THAT AFFECT YOUR PLAN
+- Your Measurement Platform Structure Draft v2 was reviewed against the orchestrator's control-group tool. Verdict: complementary, not competing. Yours answers WHICH title categories moved results; ours answers WHETHER the retitling worked at all (control-group diff-in-diff). Both run.
+- Your live-feed paste IS the launch mechanism. The Merchant Center supplemental source plan on our side is dropped. Nothing overrides your pasted titles.
+- HARD REQUIREMENT ON THE PASTE: skip the 77 control SKUs plus W12-FOSBON40. The file KD_control_veto_block.txt (Cesar is uploading it to your project files) is both your veto-review list and the paste skip-list. If you want any of the 77 retitled now, name it and we swap in a substitute so the balance holds.
+- Your open item on the Content API for Tab 4 and Tab 5 is resolved: do not build it. The orchestrator script already pulls per-SKU impressions, clicks, and conversions from the current Merchant API and will write rows in your exact Tab 4/5 shape (SKU, Date Pulled, Window Label, Impressions, Clicks, CTR). The Content API you named is the sunset predecessor.
+- Tab 6 upgrade planned: subtract the control cohort's average drift from every category delta. One change, and your isolated view becomes a controlled read instead of raw before-after. Formula comes with the feeder delivery.
+- FOSBON40: its live feed title exists and is fine. The #N/A is a missing row (or key mismatch) in MC TITLES on the NEW side. Default is it sits out this round as PARKED; if you want it in, add the one row.
+- Day 1 discipline: the moment your paste goes live and products show approved, tell Cesar the timestamp — the baseline snapshot must run that day.
+
+ASK
+- Share the MC Title Generator sheet, view-only, with itilemosaic@gmail.com. This unblocks the pre-launch audit of the 441 new titles (character structure, material-first ordering, and the four families the ads data flagged: calacatta gold, mosaic, limestone, white travertine). Audit output comes back to you as a short fix-list before anything pastes.
+
+FYI — ADS SIDE (no action for you)
+- The live Shopping campaign was found carrying 55,060 inherited ad-group negatives that block its own product families (travertine, dolomite/white, cement, wood). A purge is being scoped. Relevant to you only as context: some product families have been ad-starved for structural reasons, not demand reasons.
+
+HYGIENE (from your own queue, gentle nudge)
+- Working-log duplicate pile: one-in-one-out per K6 — collapse when you can.
+- Scaffold v0_3 deletion is already on your list; v0.4 is current.
+ORCH_SHARE 2026-07-02
+FROM: iTileMosaic orchestrator (Cesar)
+TO: Katherine workspace
+
+Mostly ads / GTM / checkout / analytics this session (Cesar-side). A few items touch your lane; the rest is context and your still-open items.
+
+
+DECISIONS AND POINTERS
+
+1. Pinterest conversion reporting is UNRELIABLE right now - do not cite it.
+   Pinterest's dashboard reports phantom conversions (its "Subway Tile" campaign claimed $14,195.86 that does not exist in WooCommerce - checkout-attempt / retry artifacts, not sales). Root cause is a missing shared Event-ID dedup between the web tag and the Conversions API. Until fixed, do NOT use any Pinterest conversion or ROAS number in CRM, reporting, or analysis. WooCommerce is the single source of truth for what sold.
+
+2. A server-side attribution backbone is being built - coordinate CRM attribution capture with it, do not build a parallel one.
+   Cesar is standing up a shared server-side attribution backbone (one shared event_id + hashed identifiers + event details through the server GTM container). It is the same infrastructure your CRM's attribution-by-design-at-lead-creation (P4, from the 6/30 guidelines) depends on. When you build CRM lead-attribution capture, plan to DRAW FROM this shared backbone rather than a separate path, so a lead's attribution matches the site's. Not built yet - a heads-up so the CRM design assumes it.
+
+3. Your title rewrites are confirmed LIVE.
+   In the product-performance pull this session, product titles show the rewritten versions - the title-test changes are serving. (The analysis joined on item_id, which is stable, so the comparison held even though titles changed.)
+
+4. Discontinued-SKU feed hygiene - a task if you maintain the catalog/feed.
+   Supplier discontinued p24-rubblup48 (Blue Vein / Statuary Azul); it was removed from the Google feed. Same wasted-ad-spend logic applies to any other discontinued/EOL SKUs still live in the feed. If you have or can produce an EOL/discontinued list, we should reconcile it against the current feed and pull them all at once rather than one at a time.
+
+
+STILL OPEN WITH YOU (pointers - status unverified on our side)
+
+- Sample-engagement CRM: fold in the analytics guidelines couriered 6/30 (WC join key, attribution-at-lead-creation P4, engagement log, provable-lift holdout, the sample-ship survey block with structured fields). Sample Conversion /pub link was included.
+- Alt-text / sync deploy from your 6/06 fix session: install Alt Text Manager v1.1 + Sites Product Sheet Sync v2.5, run the single-item tests, and close out so the fixes land in your continuity. Unverified since 6/06.
+- Weights for 7 SKUs (P63-BABARTP, W12-SANCONGLO36, W12-SANWHIGLO36, P48-AUPETRAS, P48-CROWHIP, QM03-CALGOLPHEX, SOF-HEDGM3X3) - with you + Hernan.
+- Ceppo P24-CEPAVOAS48 redirect target (WP redirect, not feed).
+- W13-MATBLA40 + W13-MATBLADE40 description-swap verify.
+
+
+NO NEW FRONT-END BUILD from this session. If the attribution backbone build later needs a stable class or data-attribute on a control, that ask will come separately when the GTM session runs.
+ORCH_SHARE — 2026-07-01
+From: iTileMosaic orchestrator (Cesar) -> KD workspace (iTileMosaic domain)
+As of session: 2026-07-01
+Transport: courier / published doc per GOV_Cross_Workspace_Handshake H2. Curated digest, not the full orchestrator log (H3).
+
+
+DECISIONS AFFECTING YOUR WORK — adjudication of the "apply the Content API" ask (H6)
+
+The request ("apply the Content API in Project Settings like the Claude key") can't be actioned as written. Adjudicated against current governance:
+
+1. The Content API is retired as of today. This session the nightly MC-diagnostics script was migrated off Google's Content API for Shopping onto Merchant API v1, ahead of the Aug 18, 2026 hard sunset. The title-test tool must target Merchant API v1 (merchantapi.googleapis.com), not the Content API (shoppingcontent.googleapis.com / content/v2.1). If the "Google feed testing sheet" calls Content API endpoints under the hood, that code needs the same migration before its end-to-end results are valid — a tool built on the sunsetting API is dead in six weeks, so its current "tested" numbers can't be trusted yet.
+
+2. There is no API key to paste. Unlike the Anthropic/Claude key (which lives in Script Properties), Merchant Center access uses the script's implicit Google OAuth token + the content scope in the manifest + a one-time GCP registration (accounts.developerRegistration.registerGcp), completed today for MC 535752843. Nothing is applied in Project Settings the way the Claude key is — the access is already wired, under the business identity. (The naming genuinely misleads: it was the "Content API" and half of Google's docs still say so. Not a KD error — the step just can't be performed as described.)
+
+3. Identity / custody — locked (P5). The tool writes title changes to the live catalog (that's the test mechanism), so it runs under itilemosaic@gmail.com, never a personal account — same reason the diagnostics do. Cesar stands up the title-test script under the business identity and grants KD editor on that script + a Cesar-owned Sheet as her data surface. KD never holds Merchant Center access directly. (This is the arrangement already settled — access tied to the business, not a person.)
+
+4. Channel (H6). Access / credential / decision asks route through this handshake — surfaced in KD_<Workstream>_Session_Summary under "Needs from Cesar," adjudicated here — not out-of-band email. Not about speed: it's so Cesar sees the ask with governance context (the API situation, the identity rules) before answering.
+
+5. Requested from KD workspace: the current source of the feed/title-test tool (the sheet's bound script). We've built a parallel version on Merchant API v1 (TitleTest.gs) and want to diff the two — especially the feed-persistence approach and which API it targets. Please fold it into the next KD_<Workstream>_Session_Summary, or paste it over directly.
+
+
+BUILD SPEC — Merchant API product-title A/B test
+(TitleTest.gs is the reference implementation; the mechanics below match it.)
+
+Footing: Merchant API v1, raw UrlFetchApp + ScriptApp.getOAuthToken() + content scope, script under itilemosaic@gmail.com. Same pattern as the diagnostics script (proven working this session).
+
+No native title-experiment API exists — build it as a DIY cohort test:
+
+1. Cohort split. Split the test SKUs into control vs variant. The tool holds the cohort map itself (offer_id -> control/variant, in a config tab). A custom_label (e.g. custom_label_4 = titletest_control / titletest_variant) is optional — only if you also want to filter the cohorts inside Google Ads / MC reporting; set it in the feed or via productInputs.insert into the supplemental source.
+
+2. Baseline FIRST — before any title change. Capture per-SKU performance via accounts.reports.search on product_performance_view (impressions, clicks, conversions, conversion value) over a trailing window, keyed by offer_id. Write it to the Cesar-owned Sheet. This is the pre-change data point — it must happen before step 3.
+
+3. Title swap. Write variant titles via accounts.productInputs.insert into a SUPPLEMENTAL data source, body field productAttributes.title. NOT productInputs.patch on the primary: the nightly feed overwrites a primary patch, and Google advises against mixing patch and supplemental for the same attribute. The supplemental source needs a merge rule that takes title FROM it — set in the Merchant Center UI ("Advanced data source management" add-on), standalone accounts only. Without that rule the primary feed's title keeps winning and the variant never serves. Control keeps its baseline title.
+
+4. Measure. After the test window, re-pull product_performance_view for both cohorts and compare variant-vs-control deltas (difference-in-differences vs the baseline).
+
+Baseline reassurance (for the "lose it permanently" concern): Merchant Center retains historical product performance queryable retroactively within its retention window — the pre-change point isn't gone if it isn't snapshotted this instant. Capture it now on today's footing anyway (no new setup); no reason to leave the clean point uncaptured.
+
+Fit / guardrails — reason within these:
+
+- Feed precedence (P1 — WooCommerce is source of truth for product data). The processed MC product is built from the primary data source (the catalog feed Sheet, fed from WC / USA Tile). A variant title written into the supplemental source only survives the nightly feed re-processing if the supplemental source has a merge rule that takes title from it — the default rule prefers the primary feed, so a naive supplemental write is ignored. Confirm variant titles persist against the feed before trusting the test (wait one feed cycle, then re-read the processed title). Coordinate so this doesn't fight the USA Tile master sync or the differentiated iTileMosaic layer.
+- Review before live (P3). Variant titles are reviewed before they go live on the catalog.
+- Measurement by design (P4). The baseline + post-window measurement plan is part of the build, not bolted on afterward.
+- Rate / latency. Products update at most twice per day per product; there is a several-minute processing lag between a write and when the processed product reflects it — don't read back immediately.
+
+
+DROP-IN KD_<Workstream>_Open_Items ROWS
+(Slot under the feed-testing workstream — e.g. KD_FeedTest; adapt to your Open Items row format.)
+
+- [P1 · blocked-on-Cesar] Stand-up: title-test script created under itilemosaic@gmail.com; KD granted editor on the script + a Cesar-owned data Sheet. (Cesar owns this step.)
+- [P1] Migrate any Content API (shoppingcontent / content/v2.1) calls in the feed-testing sheet to Merchant API v1; re-validate end-to-end on the new footing.
+- [P1] Capture baseline product_performance_view snapshot for the test SKUs (by offer_id) -> Cesar-owned Sheet, before any title swap.
+- [P2] Variant title swap via productInputs.insert into a supplemental source (needs a title-precedence rule set in the MC UI); confirm variant titles persist against the nightly feed push.
+- [P2] Post-window measurement: re-pull product_performance_view, compute variant-vs-control deltas.
+
+
+POINTERS (no secrets — H6)
+
+- Merchant API footing proven this session: diagnostics migrated, registerGcp done (MC 535752843), content scope live under itilemosaic@gmail.com.
+- Endpoints: read products/v1 (accounts.products.list); write products/v1 (accounts.productInputs.insert into a supplemental source, body productAttributes.title); measure reports/v1 (accounts.reports.search, product_performance_view).
+- Identity: itilemosaic@gmail.com owns Merchant Center + the Cloud project + the script. No credential travels in this doc.
+
