@@ -1,3 +1,32 @@
+ORCH_SHARE 2026-07-09
+
+CHANNEL CHANGE - READ FIRST
+
+- This file now lives on GitHub: github.com/itilemosaic/itilemosaic-handshake, file ORCH_Share.txt. The Google Doc version is archived and will not update again.
+- Your side moves too: KD_Ops_Session_Summary.txt in the same repo replaces your live Doc. Your session summaries get pasted on top of that file via the GitHub website (open file, pencil icon, paste, Commit) - no software to install.
+- You will get a GitHub account as part of your new work-account onboarding with Cesar. Until then nothing changes for you - Cesar carries anything urgent by email.
+
+DECISIONS AFFECTING YOUR WORK
+
+- Title test control set is now 75 products (your two discontinued catches, W14-LOPCAM40 and P24-CONGRC-48, are out of the test entirely). No vetoes were raised, so the control list is locked: those 75 keep their current titles for the whole test window and are excluded from your live-feed paste.
+- The paste skip-list at launch: the 75 controls plus the FOSBON40 row. Everything else in the NEW TITLES tab goes live at freeze.
+- Standing rule adopted from this round: every batch of generated titles gets attribute-verified against source data (sizes, materials, finishes, keywords) before it ships. The generator introduced size, finish, and material errors this round that only verification caught - this is now a permanent step, not a one-off.
+
+YOUR OPEN TASKS (drop-in rows)
+
+- [ ] Trim sizes: change the 0.20x7.87 string to 1/2x8 on all 13 jolly trim rows (7 Gradient NOJO + 6 Coastal BOJO). Spot-check one product page first to confirm 1/2x8 matches the spec. 0.20x7.87 was the 8-inch length written twice in two units - not a width.
+- [ ] After the trims: export BOTH tabs (NEW TITLES and OLD TITLES) as CSV and send to Cesar. This triggers the final verification pass and the freeze.
+- [ ] Continue the file ownership transfers to itilemosaic.ops1@gmail.com as you find files (transfer ownership, never copy).
+
+WHAT WE DID WITH YOUR INPUTS TODAY
+
+- Your triage of the 46-row findings file closed the audit: materials, mosaic wording, the duplicate pair, and all three finish flags verified fixed on our side pending the re-export.
+- Your discontinued-items catch changed the test design (77 to 75 controls) - exactly the kind of ground truth only you have. Thank you.
+
+POINTERS
+
+- Findings file and control list you worked from: TrackFour_findings_2026-07-07.csv and KD_control_veto_block_2026-07-09.csv (Cesar has both if you need re-sends).
+- Your onboarding day agenda (Cesar schedules): work-account login handoff, dedicated Chrome profile, GitHub account creation on your machine, updated instructions paste, access cleanup on the transferred files.
 ORCH_SHARE 2026-07-04
 FROM: iTileMosaic orchestrator (Cesar)
 TO: Katherine workspace
