@@ -1,3 +1,29 @@
+ORCH SHARE - 2026-07-10
+
+HEADLINE
+- Assignment is FROZEN at v4.1. Both launch reconciliations (Recon A and Recon B) are CLOSED with clean results. Your baseline is intact - nothing has ever overwritten the live titles. The only thing between us and go-live is one row sync and paste day.
+
+YOUR TASKS
+- 1. SNOMAT ROW SYNC (gates paste day): P30-SNOMAT is live in the Google feed and Merchant Center (489 products) but the OLD TITLES tab still shows 488. Please add its row back into OLD TITLES so the mirror matches the feed.
+- 2. CUSTOM LABELS SHEET (1 minute, no rush): custom_label_1 has a leading space in " Anti-Slip" on these four rows - P48-EPISHEAS, P48-FEEWHIAS, P48-KALIVOAS, P48-KALWHIAS. Please remove the space. It may affect campaign partition matching.
+- 3. DO NOT click "Add all products found" (the 53 products banner) in Merchant Center during the test window. Those arrive with Google-generated titles and would contaminate the test.
+
+PASTE DAY SEQUENCE (when Cesar gives the go)
+- Paste the 407 VARIANT titles into the live datafeed.
+- SKIP LIST: the 72 controls plus W12-FOSBON40-A. These rows keep their old titles.
+- Same day, no exceptions: Cesar runs captureBaseline, you re-export Tab 2b, Cesar runs verifyVariantTitles.
+
+DECISIONS RECORDED
+- The under-800 rule is availability-based and feed membership is now dynamic: if a SKU drops out mid-test from stock, it is recorded as attrition, not a test failure. Re-entries resume with a gap flag.
+- W12-FOSBON40-A is the canonical id per Sage. Its staged title now exists. It stays PARKED until the test ends.
+- The five titles that looked off in the reconciliation (Dale Terrazzo trio, both Modas) are just Merchant Center still serving your pre-edit versions - your 7/09-10 cleanups had not propagated at check time. Self-resolves on the next daily fetch. Nothing to do.
+- Your three renamed SKUs (MONBLANA-A, BIACARP48A, BIACARH48A) are serving cleanly under the new ids and stay in the test as variants.
+
+THANKS
+- The trim fix, the dup fix, and the same-day tab cleanups made the freeze lap fast. Good round.
+
+=====================================
+
 ORCH_SHARE 2026-07-09
 
 CHANNEL CHANGE - READ FIRST
