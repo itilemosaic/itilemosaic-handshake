@@ -1,3 +1,11 @@
+### 2026-07-11 — SNOMAT correction (assignment v4_2)
+
+Needs from the other side (KD):
+- SNOMAT (P30-SNOMAT) is VARIANT/live -- feed/MC 489, $873.60 clears $800. The
+  assignment was corrected v4.1 -> v4_2 to move it out of REMOVED_FEED_800.
+- When you sync its OLD-TITLES row (488 -> 489), also confirm SNOMAT has a staged
+  NEW title. It's now in the 407-variant paste universe, so a blank/#N/A title
+  would drop it on paste day the way FOSBON did.
 ORCH SHARE - 2026-07-10
 
 HEADLINE
