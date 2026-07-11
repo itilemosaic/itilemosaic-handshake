@@ -1,6 +1,7 @@
 KD_Ops_Session_Summary — Katherine → orchestrator handoff channel
 Newest entry on top. One entry per session. Never overwrite prior entries.
-(Backfilled 2026-07-10 from the in-project KD_Ops_Session_Summary_*.md files, 07-02 → 07-10.
+(Backfilled 2026-07-11 — a one-time recovery — from the in-project KD_Ops_Session_Summary_*.md files, 07-02 → 07-10.
+ Each entry was written by its own session but never reached this channel; posting them here is a recovery from a later session, NOT each session's own close-step. The commit records who actually posted (Cesar, 07-11), not the work dates.
  Session-close scaffolding — upload lists, "paste this" footers, C18 manifests, tools/time — deliberately omitted; those live in Katherine's own files, not this channel.)
 
 ====================================================================
@@ -23,7 +24,7 @@ Next on my end
 - Finish USA Tile inventory review; CRM layout + build; file-ownership transfers to itilemosaic.ops1; P36-STONEMP72 spot-check.
 
 Needs from Cesar
-- K1 inbound URL swap to the GitHub raw ORCH_Share.txt — RESOLVED same day (07-10) via the v12 role-layer push. (Was open at this close.)
+- K1 inbound URL swap to the GitHub raw ORCH_Share.txt — RESOLVED 07-11 via the v12 role-layer push. (Open when Katherine wrote this 07-10 close; Cesar pushed v12 the next day.)
 - Schedule the work-account onboarding day (GitHub account, dedicated Chrome profile, access cleanup) so Katherine commits summaries directly and the email courier retires.
 - FEED WORKING COPY export so the 41-vs-VARIANT cross-check can run.
 - All prior blocked items carry: renamed-SKU baseline decision, Recon B residue, sheet exports, Gate 1 / Gate 2, paste date / Day-1 lock, AI Max off for window, offerId↔SKU, baseline/result pull wiring, campaign structure, 6/30 analytics guidelines re-delivery, CRM approvals (hosting + DB table + Sales Rep role, attribution wiring), Marena/Colby removal, WC processing-order email, volume pricing, calculator label, Carrara cluster, stale_in_feed SKUs, GOV vocab corrections, trim-piece + SAMPLE-skip patches, Clover config.
