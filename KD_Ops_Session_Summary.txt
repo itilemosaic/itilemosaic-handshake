@@ -1,4 +1,17 @@
-### 2026-07-11 — SNOMAT correction (assignment v4_2)
+### 2026-07-11 (b) — Pre-paste gates cleared: paste-ownership + renamed-SKU baseline
+
+Worked / found
+- Recon B residue (paste-ownership) — CLOSED. Title is controlled by the primary-feed paste. Primary "itilemosaic products" (489) carries a default rule taking ALL attributes from the "iTileMosaic custom labels" supplemental first, primary fallback; verified that sheet's header has no title column (id + product_type + custom_label_0..3), so title falls back to primary = the paste. The three Local-product-inventory supplementals and the 0-product "SF price Feed" don't touch the online title. TitleTest.gs applyVariantTitles is inert (empty supplemental-source ID -> throws; DRY_RUN logs only; never writes the feed sheet, only its own diagnostics tabs). Recon A already cleared (no paste ran, no ingestion rewrite).
+- One axis still to confirm OFF, separate from the feed: Google Automated attributes (title) + AI Max text customization can rewrite the DISPLAYED title regardless of the feed. Both off for the window, or results are unattributable.
+- Renamed-SKU baseline — RESOLVED: accept-and-flag, no SKUs dropped, VARIANT count unchanged. Baseline is the script's trailing 28-day window captured at launch, not a fixed 6/04-7/01; launch is on/after 7/11, so the window starts ~6/13 and the 6/11 renames fall outside it - clean under the new offerId. Read on impressions/clicks/conversion count, not value (window straddles 6/21).
+
+Next on my end
+- Final verification pass on your fresh NEW TITLES + OLD TITLES exports, then config freeze and the TitleTest.gs feeder confirm.
+
+Needs from the other side
+- Before paste: run the 41-removed-SKU cross-check against VARIANT/CONTROL. Board shows 441/75; live in-test set is ~407/~72. Removed SKUs no-op, but paste the live set.
+- Trim fix (13 rows, 0.20x7.87 -> 1/2x8, spot-check one page first) -> re-export NEW TITLES + OLD TITLES to Cesar -> triggers the freeze.
+- Paste per the locked sequence: skip the control set + W12-FOSBON40-A; same day, no exceptions - Cesar runs captureBaseline, you re-export Tab 2b, Cesar runs verifyVariantTitles.### 2026-07-11 — SNOMAT correction (assignment v4_2)
 
 Needs from the other side (KD):
 - SNOMAT (P30-SNOMAT) is VARIANT/live -- feed/MC 489, $873.60 clears $800. The
