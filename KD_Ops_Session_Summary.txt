@@ -1,5 +1,177 @@
-### 2026-06-16 — Transport setup
+KD_Ops_Session_Summary — Katherine → orchestrator handoff channel
+Newest entry on top. One entry per session. Never overwrite prior entries.
+(Backfilled 2026-07-10 from the in-project KD_Ops_Session_Summary_*.md files, 07-02 → 07-10.
+ Session-close scaffolding — upload lists, "paste this" footers, C18 manifests, tools/time — deliberately omitted; those live in Katherine's own files, not this channel.)
 
-Live doc created. First full session summary will be posted at next session close.
+====================================================================
 
-— Katherine
+### 2026-07-10 — Inventory cleanup (41 SKUs); GitHub transport confirmed; USA Tile review started
+
+Worked / found
+- GitHub transport confirmed live both directions. ORCH_Share.txt fetched clean (newest entry 07-09). This channel file held only the 06-16 stub at session start — no summary had ever reached it (the /pub empty-shell fetch failure, now understood). Interim: Katherine emails summaries to Cesar and he commits, until her ops1 GitHub account exists.
+- Inventory cleanup — 41 SKUs removed by Katherine. Tier rule: under $800 = iTileMosaic + MC feed removed, USA Tile stays live; under $500 = all platforms.
+  - Under $800, iTileMosaic + feed only (11): P10-CORHON60, P30-WONBASM, P30-LAVBLAM, P24-CALGOLM48, P24-EVOMAT, P08-GUAMOK48, P48-ONYUNIPOL-A, P12-KADPERP24, W14-LOPSCAP40, P10-CROWOWH80, W14-LOPCAM40
+  - Under $500, all platforms (30): P12-GEOESBIR24A, P30-VERBLP60, W12-FOSPER40, W12-CLAHONDE36, W12-CLAOAKDE36, P10-CROWOAM80, P48-BAIBEIPO, P63-OHIMOUNAT, P24-VERBLM48, W14-LOGENLW40, P12-PUREDEP24, P30-SNOMAT, P18-DUPMAFAS36, P36-KADMARP, P48-BIANAMM, P32-FORROSSIL, W12-POTCAS36, P48-EPISHEAS, P40-NTCOSN-I/O, P24-PEINBEIV48, P24-SEANAV48, P08-GUABLA48, P36-MARGOLP, W14-LOPSCAM40, W14-LOGENDW40, P30-WONGRIM, P24-MONBLAN48, Z07-EICHFI55, P48-SUBIVOPO, P30-POECEAS60A
+  - P36-STONEMP72 flagged in error — pulled from the list; Sage spot-check pending.
+- ORCH 07-09 folded: control set now 75 (W14-LOPCAM40 + P24-CONGRC-48 discontinued and out of the test entirely); paste skip-list = 75 controls + FOSBON40; attribute-verification against source data is now a standing rule for every title batch.
+- USA Tile inventory review started (pricing/closeout flags) — not finished.
+
+Next on my end
+- Trim sizes: 13 jolly rows 0.20x7.87 → 1/2x8 (spot-check one product page first).
+- Then export NEW TITLES + OLD TITLES as CSV to Cesar → triggers final verification pass and the freeze.
+- Cross-check the 41 removed SKUs against VARIANT before paste.
+- Finish USA Tile inventory review; CRM layout + build; file-ownership transfers to itilemosaic.ops1; P36-STONEMP72 spot-check.
+
+Needs from Cesar
+- K1 inbound URL swap to the GitHub raw ORCH_Share.txt — RESOLVED same day (07-10) via the v12 role-layer push. (Was open at this close.)
+- Schedule the work-account onboarding day (GitHub account, dedicated Chrome profile, access cleanup) so Katherine commits summaries directly and the email courier retires.
+- FEED WORKING COPY export so the 41-vs-VARIANT cross-check can run.
+- All prior blocked items carry: renamed-SKU baseline decision, Recon B residue, sheet exports, Gate 1 / Gate 2, paste date / Day-1 lock, AI Max off for window, offerId↔SKU, baseline/result pull wiring, campaign structure, 6/30 analytics guidelines re-delivery, CRM approvals (hosting + DB table + Sales Rep role, attribution wiring), Marena/Colby removal, WC processing-order email, volume pricing, calculator label, Carrara cluster, stale_in_feed SKUs, GOV vocab corrections, trim-piece + SAMPLE-skip patches, Clover config.
+
+====================================================================
+
+### 2026-07-09 — MCTitleGenerator v1.1; TrackFour 46 rows closed; CRM framed
+
+Worked / found
+- MCTitleGenerator v1.1 shipped + live-tested. R-rating fix: R9 = standard matte-finish grip (never anti-slip, never in title), R10 = wet/outdoor only, R11+ = Anti Slip + rating — verified on a live R9 product. iTileMosaic Name filter added to pullFromMasterSheet() (skips blank-name rows) — pending real-data check.
+- TrackFour findings, all 46 rows actioned by Katherine: SIZE_MISMATCH (22), MATERIAL_FLIP (5), MOSAIC_WORD_DROPPED (15), DUP_TITLE_FINISH_CHECK (2 — W14-LOPCGM40 Polished→Matte), REMOVE_FROM_FEED (P24-RUBBLUP48), ID_ANOMALY (W12-FOSBON40-A → W12-FOSBON40). Email answered.
+- Pending new products (awaiting assets; purchasing followed up): P24-ERWHRI3D48 (its series formats held in draft until assets arrive), P24-MICCARM48, P24-MICHELM48, P24-MICHELP48, P63-CALBIAAS, P63-CALBIAM. Watch: Raku 02-ARGCER (images in, no SKU yet).
+- CRM framed: WP-hosted on iTileMosaic server, "Sales Rep" role (Tabatha, login-gated), WC REST API seeds leads from SAMPLE- orders, custom WP DB table, CSV export. Fields + 8-stage status pipeline (New→…→Conversion) locked; per-lead activity log auto-stamps; open design Q: auto-stamp vs manual last-contact date.
+- W13-MATBLA40 / W13-MATBLADE40 description swap confirmed closed (had fallen off the board).
+- WP editor publish vs manual: price/SF shows on first publish (ACF fields fine) but calculator/product options don't load until a manual backend save — template review started, mechanism unconfirmed (hook timing or WC purchasability).
+
+Next on my end
+- CRM layout + build planning; WP-editor template review; Bon Ton 3 feed rows; monitor P48-ATTWHIAS.
+
+Needs from Cesar
+- CRM: (1) approve hosting on iTileMosaic server + custom WP DB table + "Sales Rep" role (lightweight, no plugins); (2) how the server-side attribution backbone wires into lead creation. [Sample→conversion pipeline has no tracking today; REST pattern already in ProductSync; build blocked without these.]
+- Re-deliver 6/30 analytics guidelines + Sample Conversion link (died on /pub).
+- WP-editor fix once the mechanism is confirmed.
+- All prior blocked items carry.
+
+====================================================================
+
+### 2026-07-08 — ProductSync v3.0; Bon Ton live; collections-page root cause; 1 deactivation
+
+Worked / found
+- Outbound transport root-caused (Katherine side done): /pub renders client-side, serves an empty shell to fetchers regardless of sharing; export?format=txt serves raw text but needs anyone-with-link. Sharing set to anyone-with-link (viewer); export URL + explanation sent to Cesar. [Superseded 07-09 by the GitHub cutover.]
+- ProductSync v3.0 deployed: iTileMosaic Description now writes to the native WC description field (post_content); USA Tile Description stays on the ACF path.
+- Bon Ton Porcelain: 4 products confirmed live on both sites; P48-ATTWHIAS added to the MC data sheet (+weight) and OLD TITLES tab.
+- Collections page root cause: it reads only the pa_series-name taxonomy via term_relationships (transient itm_collections_v3, 6h TTL). WC REST API push doesn't reliably write those term relationships — a manual WP-editor save does. Verified on Castello + Buongusto (both now showing).
+- Stock check: P24-CONGRC-48 under $800 → drafted on iTileMosaic, removed from feed (direct Sage review).
+
+Next on my end
+- CRM walkthrough; monitor P48-ATTWHIAS pickup; Bon Ton 3 feed rows; investigate eliminating the manual re-save (post-push hook / REST extension).
+
+Needs from Cesar
+- K1 URL swap to the export URL. [Superseded 07-09 → GitHub.]
+- Whether the REST API can be extended / a post-push hook added to write pa_series-name term relationships automatically.
+
+====================================================================
+
+### 2026-07-07 — 07-06 close generated; feed 516 confirmed; several items closed; Clover; Bon Ton 4
+
+Worked / found
+- Generated + uploaded the 07-06 close-out at session open (it hadn't been produced end-of-day).
+- Feed count confirmed 516 after the 13 overnight deactivations dropped (529 before).
+- Closed: SF price Feed (miscommunication, not a data-source issue); P24-CEPAVOAS48 (discontinued, invisible on both sites, no redirect); W12-FOSBON40-A weight (Sage carries none; feed 55.12 lb authoritative); WP Media Folder renewal (routed to the USA Tile agent).
+- Bon Ton Porcelain: 4 new product pages added to both sites (assets + tech info).
+- Clover: idempotency-key error resolved via a fresh order (keys are order-level, not browser-level — incognito doesn't reset them); card decline (Clover "Failed", not reaching the network) routed to the client's bank — AVS/CVV mismatch or card type suspected.
+- Tabatha training; vendor-asset tracking in Excel.
+
+Next on my end
+- Bon Ton feed rows; vendor follow-ups; Dimension/Dimensions check then route to Cesar; monitor Clover.
+
+Needs from Cesar
+- Renamed-SKU baseline decision (gates the paste); check the 13 deactivated SKUs vs VARIANT; Recon B residue; paste date / Day-1 lock; AI Max off for the window?; Clover AVS/CVV review if the bank confirms it isn't seeing the charge. Prior blocked items carry.
+
+====================================================================
+
+### 2026-07-06 — MC feed re-appearance resolved; supplemental source characterized; 13+8 deactivations; generator sheet shared
+
+Worked / found
+- MC feed re-appearance root-caused: the Friday removal hadn't registered (likely removed in MC directly, not the sheet). Re-removed; count 529→528 at 10:35 EDT, holding. Ruled out the supplemental source, ProductSync, and the "second writer" (that last was a verbal error, not a feed error).
+- Supplemental source characterized: PRODUCTS_INVENTORY_FULL SOURCE 3 = Local product inventory (File URL), 582 updated / 530 matched, carries an inventory-file warning; cannot carry or override titles — not a title-test concern. (SF price Feed = a 0-product registered primary source, origin unknown — flagged.)
+- Deactivations with Cesar verbal approval: 13 on iTileMosaic (sub-$800), 8 on USA Tile (sub-$500, a subset of the 13). [The active launch cross-check list is the 41 in the 07-10 entry.]
+- SKU corrections: P48-MONBLANA → P48-MONBLANA-A (WC + feed + generator, one pass); W13-MATBLA40 re-added to feed (pre-existing gap, not in OLD TITLES, out of test scope); W13-MATBLA40/DE40 description swap verified; W12-FOSBON40-A weight corrected to 55.12 lb.
+- MC Title Generator sheet shared view-only with itilemosaic@gmail.com — unblocks the 441-title audit.
+- Veto file verified in-project: 77 SKUs + FOSBON40 rider + RUBBLUP48 drop note.
+
+Next on my end
+- Monitor deactivated SKUs dropping from MC; lock the final assignment tab; Dimension/Dimensions check; W12-FOSBON40-A weight flag to Hernan.
+
+Needs from Cesar
+- SF price Feed identify/decide; renamed-SKU baseline decision; check the 13 vs VARIANT; Recon B residue; export URL swap [superseded → GitHub]; prior blocked items carry.
+
+====================================================================
+
+### 2026-07-05 — Recon A resolved; Recon B narrowed; veto file verified; renamed-SKU decision surfaced
+
+Worked / found
+- Recon A RESOLVED (Cesar reading live surfaces, guided in-chat). Verdict: no paste ever ran; no attribute rule or supplemental source rewrites titles on ingestion. The ORCH 7/02 "rewritten titles serving" sighting was the June renaming workstream (6/11) read against orchestrator expectations frozen when the transport went dark 6/16. Evidence: no "Title - New" column in the live feed; MC-served title = feed cell verbatim 3/3; OLD TITLES 7/01 snapshot = current feed verbatim 3/3; feed titles carry the rename fingerprint. Annotate ORCH 7/02 #3 as explained-stale; do not reopen.
+- Recon B narrowed: the "swap already fired" branch is empirically dead (MC = feed 3/3). In-project half closed by grep — no project script writes the feed sheet; only v0_8's read-only capture references its ID. Remaining for Cesar: MC → Settings → Data sources (any supplemental listed?) + TitleTest.gs Executions history / grep 1Q-hCgjr. Also settles paste ownership.
+- Capture-mechanism correction: OLD TITLES was captured from the live feed sheet (captureFeedSnapshot_) — it is feed input, not MC-served output.
+- Veto file verified: 77 SKUs (52 porcelain / 15 ceramic / 7 marble / 3 mosaic) + FOSBON40 rider + RUBBLUP48 drop.
+- W12-FOSBON40 unblocked: live title exists in feed + MC; the #N/A was a MC TITLES lookup miss only — add the row and it joins VARIANT per the rider. Shipping weight reads 10 lb vs sibling W12-FOSPER40's 55.12 lb → route to Hernan.
+
+Next on my end
+- Locked assignment tab (relabel from the locked tab, not by hand); FOSBON40 MC TITLES row.
+
+Needs from Cesar
+- Recon B residue (~5 min): the MC Data sources check + the TitleTest.gs Executions/grep + the paste-ownership word.
+- Renamed-SKU list (~77 of 89, June workstream) → then the baseline-treatment decision with Katherine (exclude / shift window / accept-and-flag), because exclusion would alter the VARIANT paste list.
+- Sheet exports; 6/30 guidelines re-delivery; campaign structure; AI Max.
+
+====================================================================
+
+### 2026-07-04 (b) — Duplicate-file collapse; transport re-verified; ORCH 07-04 folded
+
+Worked / found
+- 14 stale duplicate copies collapsed and verified against the project UI listing (mostly pre-K6, plus a missed delete-first + a double upload at the 07-02 close). Post-collapse: all living files singletons. [Collapse mechanics + the mirror-dedupe finding live in the working log; kept out of the channel.]
+- ORCH_Share transport re-verified on the export URL; blackout entries 07-01 / 07-02 / 07-04 read and folded. (Earlier "still empty" findings this era were agent error — the dead /pub URL fetched against v10 instructions.)
+- ORCH 07-04 decisions folded: primary-feed paste IS the launch mechanism (supplemental dropped); hard veto = 77 controls + FOSBON40; Day-1 same-day timestamp rule; Tab 4/5 fed by the orchestrator script (do not build); FOSBON40 = missing MC TITLES row, default PARKED.
+- Delivery rule re-locked (C17): agents hand complete upload-ready files; humans only delete-old / upload-new / paste.
+
+Needs from Cesar
+- Upload the veto file (HIGH, pre-paste — not in project at this close). After Katherine reports the verified export URL, swap it into the orchestrator layer. Prior rows carry.
+
+====================================================================
+
+### 2026-07-04 (a) — Title-test assignment FINAL; transport root-caused; veto gap identified
+
+Worked / found
+- Stratified SKU assignment recorded FINAL: 77 CONTROL / 441 VARIANT / 114 EXCLUDED_NEW / 10 EXCLUDED_SIZE / 1 PARKED (W12-FOSBON40) / 1 EXCLUDED_DISCONTINUED (P24-RUBBLUP48). [Control corrected to 75 on 07-09.]
+- Launch mechanism confirmed: new titles pasted into the primary live feed sheet — no MC supplemental source.
+- ORCH_Share transport root-caused: /pub renders body client-side (~6/22), serving an empty shell to fetchers; fix = the doc's export?format=txt endpoint (fetch-verified). Role-layer v10 pushed (URL swap + transport-down fallback).
+- Outbound live doc audited: only its 6/16 setup entry present — the K6 paste had never executed across ~15 sessions. Routed to Katherine.
+- Two launch-blocking reconciliations opened — Recon A (ORCH 7/02 "titles serving" vs KD's no-paste-ran) and Recon B (7/01 supplemental spec vs 7/04 primary-feed direction; did TitleTest.gs's swap path ever fire?).
+
+Findings
+- Control-veto gap: the 77-SKU list existed nowhere in the workspace — protection rested on memory. KD_control_veto_block.txt to be uploaded + mirrored to a locked exclusion tab. HIGH, pre-paste.
+
+Needs from Cesar
+- Upload KD_control_veto_block.txt (+ locked tab). Re-deliver the 6/30 analytics guidelines + Sample Conversion link. FEED WORKING COPY + OLD TITLES exports as CSV.
+
+====================================================================
+
+### 2026-07-02 — Governance cleanup; measurement sheet restored; diff v0.7 + control selector; Rovere live; ownership split locked
+
+Worked / found
+- Project-file cleanup: duplicate working-log copies fixed, superseded script versions pruned — single-current-copy per file.
+- Measurement sheet restored: the 7/1 scaffold paste had overwritten the diff tool in Code.gs; restored it as TitleDiffHighlight.gs, which surfaced an onOpen() collision (only one menu ever appeared) — the diff script now solely owns menu creation. Both menus verified live.
+- Diff v0.7: TITLE COMPARISON now computes per-SKU display-truncation analysis (first-change position; visibility class AD ~35 / MOBILE ~50 / DESKTOP ~70 / NOT_VISIBLE) — mechanizes the truncation gate.
+- Control-set selector (scaffold v0.3 + diff v0.8): reads Impressions_Export + OLD TITLES, tiers by baseline impressions, systematic ~12% sample per tier, writes CONTROL SET PROPOSAL with an Approve/Reject column. Tested on a synthetic 530-SKU catalog (63 proposed, 21/21/21).
+- Rovere Honey Chevron published live on both sites — first live confirmation of the ProductSync v2.9 Description fix (landed in the ACF description field, native content clean).
+- Verified: Google title truncation is positional (~70 desktop / ~50 mobile / ~35 ad slots), front-cut; MC auto-improvements don't touch titles, but attribute rules / supplemental feeds can (→ audit gate 2); Impressions_Export join-safe (530 SKUs, baseline 06-04..07-01).
+
+Decisions
+- Merchant API replaces the Content API pull (nothing to migrate — the pull was never built). Ownership split: Katherine owns the diff engine / category analysis / rewrites; Cesar owns the performance pull under the business account. Control group must be locked BEFORE the paste (the one irreversible timing constraint). Four pre-paste gates agreed. Katherine now delivers the SKU/group/new-title table and executes the paste.
+
+Needs from Cesar
+- AI Max off for the window?; title-rules audit result; drafted new-titles list; offerId↔SKU confirmation; Dimension/Dimensions direction call; business-account pull wiring.
+
+====================================================================
+
+### 2026-06-16 — Transport setup (origin)
+
+Live doc created; auto-handshake transport set up. Superseded 2026-07-09 by the GitHub channel; retained as this channel's origin marker.
