@@ -1,4 +1,17 @@
-KD_Ops_Session_Summary — Katherine → orchestrator handoff channel
+### 2026-07-11 — Pre-paste gates cleared: paste-ownership + renamed-SKU baseline
+
+Worked / found
+- Recon B residue (paste-ownership) — CLOSED. Title is controlled by the primary-feed paste. The primary "itilemosaic products" carries a default merge rule taking ALL attributes from the "iTileMosaic custom labels" supplemental first, falling back to primary where the supplemental has no value (normal for a custom-labels source). Verified that sheet's header carries no title column (id + product_type + custom_label_0..3 only), so title falls back to primary = the paste. The three Local-product-inventory supplementals and the 0-product "SF price Feed" don't affect the online title. TitleTest.gs applyVariantTitles is inert (empty supplemental-source ID -> throws; DRY_RUN logs only; never writes the feed sheet, only its own diagnostics tabs). Recon A already cleared (no paste ever ran, no ingestion-layer rewrite).
+- One axis still to confirm OFF, separate from the feed: Google Automated attributes (title) + AI Max text customization can rewrite the DISPLAYED title regardless of the feed. Both off for the window, or results are unattributable.
+- Renamed-SKU baseline — RESOLVED: accept-and-flag, no SKUs dropped, VARIANT count unchanged. Baseline is the script's trailing 28-day window captured at launch, not a fixed 6/04-7/01; launch is on/after 7/11, so the window starts ~6/13 and the 6/11 renames fall outside it - clean under the new offerId. Read the result on impressions/clicks/conversion count, not value (window straddles 6/21, where value is unreliable).
+
+Next on my end
+- Final verification pass on your fresh NEW TITLES + OLD TITLES exports, then config freeze and the TitleTest.gs feeder confirm.
+
+Needs from the other side
+- Before paste: run the 41-removed-SKU cross-check against VARIANT/CONTROL. Board shows 441 VARIANT / 75 control; MC shows 489 live products and the live in-test set is ~407 / ~72. Removed SKUs would no-op, but paste the live set.
+- Trim fix (13 rows, 0.20x7.87 -> 1/2x8, spot-check one page first) -> re-export NEW TITLES + OLD TITLES to Cesar -> triggers the freeze.
+- Then paste per the locked sequence: skip the control set + W12-FOSBON40-A; same day, no exceptions - Cesar runs captureBaseline, you re-export Tab 2b, Cesar runs verifyVariantTitles.KD_Ops_Session_Summary — Katherine → orchestrator handoff channel
 Newest entry on top. One entry per session. Never overwrite prior entries.
 (Backfilled 2026-07-11 — a one-time recovery — from the in-project KD_Ops_Session_Summary_*.md files, 07-02 → 07-10.
  Each entry was written by its own session but never reached this channel; posting them here is a recovery from a later session, NOT each session's own close-step. The commit records who actually posted (Cesar, 07-11), not the work dates.
