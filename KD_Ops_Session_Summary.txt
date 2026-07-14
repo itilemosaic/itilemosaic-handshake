@@ -47,6 +47,38 @@ Needs from the other side (KD):
 
 =====================================
 
+### 2026-07-13 — Image corruption investigation + re-uploads; Michelangelo + Eras live
+ 
+---
+ 
+## What I worked on / found
+ 
+Customer service block at session start (tracking link emails sent).
+ 
+**Image corruption investigation — iTileMosaic.**
+Found 8 SKUs with `admin-ajax.php` written into their WooCommerce gallery fields instead of actual image URLs: P12-POEBIAS24, P24-POEBIAM (2 of 3 images), P24-KALWHIM, P24-KALAVOM, P24-PRONGRM, P24-PRONWHM (room setting intact, all others gone), P24-PURCALM, P24-PUREDEM. These images were confirmed displaying correctly until recently — not a failed original upload, something actively wrote bad data into product meta after the fact. Ruled out: ProductSync (none had YES flagged), server restore (that was USA Tile), SpeedSize CDN (URL path is standard WordPress, no CDN domain), WP Asset Cleanup (script/CSS loader, not a media tool). Root cause unconfirmed — most likely a plugin update that touched WooCommerce product meta. Verification method: direct inspection of gallery fields in WC product editor.
+ 
+Re-uploaded all 8 from V drive: cleared ghost media library entries, assigned featured images and galleries. Updated MC data sheet (Google Merchant Center feed sheet) with new image URLs for all 8. Decision: monitor for recurrence, escalate to Cesar if it happens again.
+ 
+**New products pushed live.** Michelangelo and Eras porcelain tile products pushed live on both sites.
+ 
+---
+ 
+## What's next on my end
+ 
+- SNOMAT: add back to OLD TITLES (488 → 489) + confirm NEW title exists in generator sheet — pre-paste gate from ORCH 07-11 (Low)
+- Custom labels space fix: remove leading space from " Anti-Slip" in custom_label_1 on P48-EPISHEAS, P48-FEEWHIAS, P48-KALIVOAS, P48-KALWHIAS (Low)
+- Trim sizes fix: 13 jolly trim rows 0.20x7.87 → 1/2x8 (Low, must be before CSV export)
+- CSV export: NEW TITLES + OLD TITLES → Cesar after trim fix (Low)
+- File migration into ops1 — my next-session priority, carries from 7/11 (Medium)
+- Monitor the 8 re-uploaded SKUs for recurrence
+---
+ 
+## Needs from Cesar
+ 
+- **Admin-ajax image corruption — root cause investigation.** 8 SKUs had gallery fields corrupted to `admin-ajax.php` references; images were displaying correctly until recently, no sync or manual edits involved. Partial corruption pattern (P24-PRONWHM kept room setting only; P24-POEBIAM lost 2 of 3) suggests a specific trigger rather than a broad wipe. Re-uploaded for now. Ask: pull the WP plugin update log + Nexcess server logs around the disappearance window and identify what wrote bad data into WC product meta. If a plugin is confirmed, we need to know if it could run again.
+- Carrying: GOV push (channel standard + integrity check + ORCH cleanup + model/effort block + vocab corrections — paste-ready block delivered 7/11); ops1 GitHub onboarding; FEED WORKING COPY + OLD TITLES exports; Gate 1/2 + paste date; Recon B residue + renamed-SKU baseline decision.
+
 ### 2026-07-10 — assignment FROZEN at v4.1; Recon A & B CLOSED clean; one row sync + paste day to go-live
 
 HEADLINE
