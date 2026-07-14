@@ -1,3 +1,28 @@
+### 2026-07-14 — Pre-paste gates cleared; Michelangelo + Eras live; USA Tile inventory closed
+
+---
+
+## What I worked on / found
+
+Three Katherine-side pre-paste gates cleared: (1) Trim sizes fix (13 jolly rows, 0.20x7.87 → 1/2x8) confirmed done prior to session. (2) SNOMAT sync complete — P30-SNOMAT price ($873.60) confirmed clears $800 per Sage; row back in OLD TITLES (488 → 489); NEW title confirmed staged. (3) CSV export sent — NEW TITLES + OLD TITLES updated with current MC data source (Michelangelo and Eras included); exported and sent to Cesar. Paste is now fully gated on Cesar's side only (renamed-SKU baseline decision + Recon B residue + paste date).
+
+Decisions / plans formed this session: 07-13 working log correction — Michelangelo and Eras were pushed as drafts on 07-13, not live; go-live held until this morning for daytime monitoring. Pushed both series live on iTileMosaic + USA Tile. Generated MC titles for both series; applied to NEW TITLES tab. Collections page check scheduled ~6 hours from push. USA Tile inventory review completed and closed — clean, nothing new to flag. Coral Reef products remain in draft on both sites; suspected missing technical information — Katherine confirming next.
+
+Channel-integrity check at session open: outbound channel newest entry 07-11 (b). The 07-13 session summary was not committed to GitHub — flagged for courier below.
+
+## What's next on my end
+
+- Email 07-13 session summary to Cesar for GitHub commit today (then 07-14 same)
+- Collections page check — Michelangelo + Eras, ~6 hours from push (Low)
+- Confirm Coral Reef missing tech specs; source them or flag to Cesar (Low)
+- Custom labels space fix — 4 SKUs, leading space in Anti-Slip, custom_label_1 (Low, pre-paste)
+- File migration into ops1 — ongoing (Medium)
+
+## Needs from Cesar
+
+- **07-13 + 07-14 summary commits:** I'll email both texts — pencil → paste on top → Commit in KD_Ops_Session_Summary.txt on GitHub.
+- Carrying: renamed-SKU baseline decision + Recon B residue (paste bottlenecks); GOV push (channel standard + integrity check + vocab corrections + model/effort block — paste-ready block delivered 7/11); ops1 GitHub onboarding; FEED WORKING COPY + OLD TITLES exports; Gate 1/2 + paste date; admin-ajax root cause (8 SKUs, plugin update suspected); CRM hosting/DB/role approval + attribution backbone; 6/30 analytics guidelines re-delivery.
+
 ### 2026-07-11 (b) — Pre-paste gates cleared: paste-ownership + renamed-SKU baseline
 
 Worked / found
