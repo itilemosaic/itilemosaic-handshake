@@ -1,3 +1,42 @@
+# KD_Ops_Session_Summary — 2026-07-15
+
+### 2026-07-15 — GitHub courier retired; Raku images underway; SKU cross-check complete
+
+**What I worked on / found**
+
+Customer service and logistics administrative tasks handled at session open before site management work (no detail logged).
+
+**GitHub direct-commit confirmed.** Account created on ops Gmail; collaborator access on itilemosaic-handshake repo verified. Email courier to Cesar retired effective today — Katherine commits session summaries directly going forward. K6 role-layer still describes the courier as the interim flow — GOV push needed (see below).
+
+**Coral Reef** — waiting on vendor contact info; email not sent this session. Holding.
+
+**Raku (02-ARGCER) — ceramic confirmed** (corrects initial porcelain assumption). Most product images completed today; couple of room scenes still pending (nice-to-have). SKU still pending from Sage. Once SKU lands: migration tracking sheet → ProductSync setup → renaming → push both sites → publish when inventory arrives.
+
+**SKU cross-check — 46-SKU list from Cesar.** 4 of 46 already removed and documented: W12-POTCAS36 (07-06 + 07-10), P32-FORROSSIL, P24-PEINBEIV48, P24-SEANAV48 (all 07-10 under $500 all-platforms). 42 untouched in records. Full pass completed.
+
+---
+
+**What's next on my end**
+
+- Coral Reef vendor email — send once contact info received. (Effort: low)
+- Raku — ProductSync setup, renaming, site push once SKU lands from Sage. (Effort: medium)
+- Michelangelo + Eras collections page check — passive monitor. (Effort: low)
+- Custom labels space fix — 4 SKUs, pre-paste. (Effort: low)
+
+---
+
+**Needs from Cesar**
+
+- **K6 GOV push — retire courier language.** K6 still describes the email courier as the standing interim flow. Katherine's account is live with collaborator access — courier retired. K6 needs updating to reflect direct commit as the standing flow.
+  - What: update K6 in Katherine's role-layer instructions
+  - Why: K6 is factually stale
+  - Fit: governance change, Cesar owns
+  - Specific ask: push updated K6 removing courier language, confirming direct commit
+  - Urgency: low — functionally working, instructions are just stale
+- All prior Needs from Cesar carry.
+
+=====================================
+
 ### 2026-07-14 — Pre-paste gates cleared; Michelangelo + Eras live; USA Tile inventory closed
 
 ---
