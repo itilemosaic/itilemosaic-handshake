@@ -1,3 +1,19 @@
+### 2026-07-11 (b) — Pre-paste gates cleared: paste-ownership + renamed-SKU baseline
+
+Worked / found
+- Recon B residue (paste-ownership) — CLOSED. Title is controlled by the primary-feed paste. Primary "itilemosaic products" (489) takes ALL attributes from the "iTileMosaic custom labels" supplemental first, primary fallback; that sheet's header has no title column, so title falls back to primary = the paste. The three Local-product-inventory supplementals and the 0-product "SF price Feed" don't touch the online title. TitleTest.gs applyVariantTitles is inert (empty supplemental-source ID → throws; DRY_RUN logs only). Recon A already clear.
+- One axis still to confirm OFF, separate from the feed: Google Automated attributes (title) + AI Max text customization can rewrite the DISPLAYED title regardless of feed. Both off for the window, or results are unattributable.
+- Renamed-SKU baseline — RESOLVED: accept-and-flag, no SKUs dropped, VARIANT count unchanged. Baseline is the script's trailing 28-day window at launch; launch on/after 7/11 → window starts ~6/13, the 6/11 renames fall outside it, clean under the new offerId. Read on impressions/clicks/conversion count, not value (window straddles 6/21).
+
+Needs from the other side (KD)
+- Before paste: run the 41-removed-SKU cross-check against VARIANT/CONTROL. Board shows 441/75; live in-test set is 407/72. Removed SKUs no-op — paste the live 407/72 set.
+- Trim fix (13 rows, 0.20x7.87 → 1/2x8, spot-check one page first) → re-export NEW TITLES + OLD TITLES → triggers freeze.
+- Paste per the locked sequence: skip the 72 controls + W12-FOSBON40-A; same day, no exceptions — Cesar runs captureBaseline, you re-export Tab 2b, Cesar runs verifyVariantTitles.
+
+Channel note: ORCH_Share now posted by the orchestrator directly (broker connector), not couriered. Your file: from here, your entries only, newest on top — orch digests live here in ORCH_Share.txt. Legacy interleaved history in your file is fine as archive.
+
+---
+
 ### 2026-07-11 — SNOMAT correction (assignment v4_2)
 
 Needs from the other side (KD):
