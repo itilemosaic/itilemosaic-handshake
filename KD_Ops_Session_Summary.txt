@@ -1,3 +1,27 @@
+### 2026-07-16 — SAMPLE-only pull root-caused; ProductSync v3.1 ready; MC title test control list resolved
+
+**What I worked on / found**
+
+Project file review identified two missing session summaries: KD_Ops_Session_Summary_2026-07-11.md and KD_Ops_Session_Summary_2026-07-14.md are not in the project despite both sessions being in the working log. Will upload when available.
+
+ProductSync SAMPLE-only issue root-caused and fixed. Products showing only their SAMPLE- row in MASTER PRODUCTS (no parent row) traced to the iTileMosaic pull in v3.0 using `status=publish` — draft products (the script default on CREATE) were silently skipped; SAMPLE- products came through because they were published manually. Built v3.1: (1) both sites now pull `status=any`; (2) added `pullFromBothSites()` — runs USA Tile then iTileMosaic in sequence; SKU-based upsert unchanged, no duplication risk; (3) added menu item. File ready to deploy.
+
+MC title test control list: Cesar's email flagged the control list as missing from the A/B Testing sheet. Katherine confirmed she had already returned the reviewed list to him in her reply to his original attachment email — pointed him back to the thread, no re-do. Test setup confirmed per his item 2: holdout as primary, category breakdown as secondary read. API keys on CONFIG tab acknowledged as low-urgency cleanup — added to open items.
+
+**What's next on my end**
+
+- Deploy ProductSync v3.1 (replace v3.0 in Apps Script editor). (Effort: low)
+- Upload missing session summaries 07-11 and 07-14 to project when available. (Effort: low)
+- Coral Reef — send vendor email once contact info received. (Effort: low)
+- Raku ProductSync setup — once SKU lands from Sage. (Effort: medium)
+- Michelangelo + Eras collections page check — confirm display. (Effort: low, passive)
+
+**Needs from Cesar**
+
+- Carry: renamed-SKU baseline decision (paste bottleneck).
+- Carry: Recon B residue — MC Data sources check + TitleTest.gs Executions/grep (paste bottleneck).
+- Carry: GOV push (channel standard + K6 courier update + vocab corrections).
+
 # KD_Ops_Session_Summary — 2026-07-15
 
 ### 2026-07-15 — GitHub courier retired; Raku images underway; SKU cross-check complete
