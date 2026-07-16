@@ -1,178 +1,33 @@
-### 2026-07-11 (b) — Pre-paste gates cleared: paste-ownership + renamed-SKU baseline
+ORCH_SHARE — 2026-07-16
 
-Worked / found
-- Recon B residue (paste-ownership) — CLOSED. Title is controlled by the primary-feed paste. Primary "itilemosaic products" (489) takes ALL attributes from the "iTileMosaic custom labels" supplemental first, primary fallback; that sheet's header has no title column, so title falls back to primary = the paste. The three Local-product-inventory supplementals and the 0-product "SF price Feed" don't touch the online title. TitleTest.gs applyVariantTitles is inert (empty supplemental-source ID → throws; DRY_RUN logs only). Recon A already clear.
-- One axis still to confirm OFF, separate from the feed: Google Automated attributes (title) + AI Max text customization can rewrite the DISPLAYED title regardless of feed. Both off for the window, or results are unattributable.
-- Renamed-SKU baseline — RESOLVED: accept-and-flag, no SKUs dropped, VARIANT count unchanged. Baseline is the script's trailing 28-day window at launch; launch on/after 7/11 → window starts ~6/13, the 6/11 renames fall outside it, clean under the new offerId. Read on impressions/clicks/conversion count, not value (window straddles 6/21).
+FROM: Orchestrator (Cesar side)
+TO: KD Ops
+RE: Title test is LIVE + what I need from you next
 
-Needs from the other side (KD)
-- Before paste: run the 41-removed-SKU cross-check against VARIANT/CONTROL. Board shows 441/75; live in-test set is 407/72. Removed SKUs no-op — paste the live 407/72 set.
-- Trim fix (13 rows, 0.20x7.87 → 1/2x8, spot-check one page first) → re-export NEW TITLES + OLD TITLES → triggers freeze.
-- Paste per the locked sequence: skip the 72 controls + W12-FOSBON40-A; same day, no exceptions — Cesar runs captureBaseline, you re-export Tab 2b, Cesar runs verifyVariantTitles.
 
-Channel note: ORCH_Share now posted by the orchestrator directly (broker connector), not couriered. Your file: from here, your entries only, newest on top — orch digests live here in ORCH_Share.txt. Legacy interleaved history in your file is fine as archive.
+TITLE TEST — LAUNCHED TODAY
 
----
+- Your control list closed the loop. The list you sent (77 controls + FOSBON parked) was the frozen set I'd lost track of. Scrubbed to the live feed it lands on exactly 72 controls — the 5 that drop are the 2 DISC you flagged (W14-LOPCAM40, P24-CONGRC-48) plus 3 that left the feed since (W14-LOPSCAP40, P12-GEOESBIR24A, P48-ONYUNIPOL-A). Thank you — that saved the test.
 
-### 2026-07-11 — SNOMAT correction (assignment v4_2)
+- Locked design: 411 variant / 72 control against today's feed. Variant is 411 (not the old 407) because the Michelangelo and Eras series went live since the freeze. You approved both: locking 411/72, and running the holdout as the system of record with your category breakdown as the secondary read. That's what's live.
 
-Needs from the other side (KD):
-- SNOMAT (P30-SNOMAT) is VARIANT/live -- feed/MC 489, $873.60 clears $800. The
-  assignment was corrected v4.1 -> v4_2 to move it out of REMOVED_FEED_800.
-- When you sync its OLD-TITLES row (488 -> 489), also confirm SNOMAT has a staged
-  NEW title. It's now in the 407-variant paste universe, so a blank/#N/A title
-  would drop it on paste day the way FOSBON did.
+- Feed loaded to Merchant Center at 4:37 PM today (source "itilemosaic products", 488 products). 410 titles were rewritten; your 72 controls + FOSBON keep their old titles. Pre-paste baseline is banked.
 
-=====================================
 
-### 2026-07-10 — assignment FROZEN at v4.1; Recon A & B CLOSED clean; one row sync + paste day to go-live
+WHAT I NEED FROM YOU
 
-HEADLINE
-- Assignment is FROZEN at v4.1. Both launch reconciliations (Recon A and Recon B) are CLOSED with clean results. Your baseline is intact - nothing has ever overwritten the live titles. The only thing between us and go-live is one row sync and paste day.
+1. Tab 2b re-export — same day the test verifies. Once Merchant Center finishes reprocessing the feed (likely overnight), I re-run the verify check, then you re-export your Tab 2b so your category-attribution engine has the post-paste snapshot to run against. I'll ping when verify is clean.
 
-YOUR TASKS
-- 1. SNOMAT ROW SYNC (gates paste day): P30-SNOMAT is live in the Google feed and Merchant Center (489 products) but the OLD TITLES tab still shows 488. Please add its row back into OLD TITLES so the mirror matches the feed.
-- 2. CUSTOM LABELS SHEET (1 minute, no rush): custom_label_1 has a leading space in " Anti-Slip" on these four rows - P48-EPISHEAS, P48-FEEWHIAS, P48-KALIVOAS, P48-KALWHIAS. Please remove the space. It may affect campaign partition matching.
-- 3. DO NOT click "Add all products found" (the 53 products banner) in Merchant Center during the test window. Those arrive with Google-generated titles and would contaminate the test.
+2. During the whole test window, please do NOT click "Add all products found" in Merchant Center. It's showing 61 right now — they arrive with Google-generated titles, which would contaminate the test.
 
-PASTE DAY SEQUENCE (when Cesar gives the go)
-- Paste the 407 VARIANT titles into the live datafeed.
-- SKIP LIST: the 72 controls plus W12-FOSBON40-A. These rows keep their old titles.
-- Same day, no exceptions: Cesar runs captureBaseline, you re-export Tab 2b, Cesar runs verifyVariantTitles.
+3. Still open from last week (1 min each): strip the leading space in custom_label_1 " Anti-Slip" on P48-EPISHEAS, P48-FEEWHIAS, P48-KALIVOAS, P48-KALWHIAS.
 
-DECISIONS RECORDED
-- The under-800 rule is availability-based and feed membership is now dynamic: if a SKU drops out mid-test from stock, it is recorded as attrition, not a test failure. Re-entries resume with a gap flag.
-- W12-FOSBON40-A is the canonical id per Sage. Its staged title now exists. It stays PARKED until the test ends.
-- The five titles that looked off in the reconciliation (Dale Terrazzo trio, both Modas) are just Merchant Center still serving your pre-edit versions - your 7/09-10 cleanups had not propagated at check time. Self-resolves on the next daily fetch. Nothing to do.
-- Your three renamed SKUs (MONBLANA-A, BIACARP48A, BIACARH48A) are serving cleanly under the new ids and stay in the test as variants.
 
-THANKS
-- The trim fix, the dup fix, and the same-day tab cleanups made the freeze lap fast. Good round.
+ONE HEADS-UP (not urgent)
 
-=====================================
+- Your Sites Product Sheet Sync spreadsheet keeps both stores' WooCommerce API keys in plain cells on the CONFIG tab, plus a Claude API key in Script Properties. Those are live write-credentials to both sites. Nothing to do this second, but let's lock it down when we do your onboarding — move the keys server-side or restrict the sheet.
 
-### 2026-07-09 — channel moved to GitHub; control set -> 75; attribute-verification now standing
 
-CHANNEL CHANGE - READ FIRST
-- This file now lives on GitHub: github.com/itilemosaic/itilemosaic-handshake, file ORCH_Share.txt. The Google Doc version is archived and will not update again.
-- Your side moves too: KD_Ops_Session_Summary.txt in the same repo replaces your live Doc. Your session summaries get pasted on top of that file via the GitHub website (open file, pencil icon, paste, Commit) - no software to install.
-- You will get a GitHub account as part of your new work-account onboarding with Cesar. Until then nothing changes for you - Cesar carries anything urgent by email.
+NOTE ON THE TWO TEST TOOLS
 
-DECISIONS AFFECTING YOUR WORK
-- Title test control set is now 75 products (your two discontinued catches, W14-LOPCAM40 and P24-CONGRC-48, are out of the test entirely). No vetoes were raised, so the control list is locked: those 75 keep their current titles for the whole test window and are excluded from your live-feed paste.
-- The paste skip-list at launch: the 75 controls plus the FOSBON40 row. Everything else in the NEW TITLES tab goes live at freeze.
-- Standing rule adopted from this round: every batch of generated titles gets attribute-verified against source data (sizes, materials, finishes, keywords) before it ships. The generator introduced size, finish, and material errors this round that only verification caught - this is now a permanent step, not a one-off.
-
-YOUR OPEN TASKS (drop-in rows)
-- [ ] Trim sizes: change the 0.20x7.87 string to 1/2x8 on all 13 jolly trim rows (7 Gradient NOJO + 6 Coastal BOJO). Spot-check one product page first to confirm 1/2x8 matches the spec. 0.20x7.87 was the 8-inch length written twice in two units - not a width.
-- [ ] After the trims: export BOTH tabs (NEW TITLES and OLD TITLES) as CSV and send to Cesar. This triggers the final verification pass and the freeze.
-- [ ] Continue the file ownership transfers to itilemosaic.ops1@gmail.com as you find files (transfer ownership, never copy).
-
-WHAT WE DID WITH YOUR INPUTS TODAY
-- Your triage of the 46-row findings file closed the audit: materials, mosaic wording, the duplicate pair, and all three finish flags verified fixed on our side pending the re-export.
-- Your discontinued-items catch changed the test design (77 to 75 controls) - exactly the kind of ground truth only you have. Thank you.
-
-POINTERS
-- Findings file and control list you worked from: TrackFour_findings_2026-07-07.csv and KD_control_veto_block_2026-07-09.csv (Cesar has both if you need re-sends).
-- Your onboarding day agenda (Cesar schedules): work-account login handoff, dedicated Chrome profile, GitHub account creation on your machine, updated instructions paste, access cleanup on the transferred files.
-
-=====================================
-
-### 2026-07-04 — transport confirmations + two asks (resume K6, file-ID swap)
-
-Transport-only digest. Short.
-
-TRANSPORT - CONFIRMATIONS AND TWO ASKS
-- 1. Your diagnosis is confirmed and adopted, both directions. We fetched ORCH_Share via the export URL today (this doc, current through the 7/02 digest) and fetched your KD_Ops_Session_Summary (live) /pub URL today (body served fine, as your differential predicted). Policy banked on our side: export URLs are the standard, nothing ever reverts to /pub, and a /pub page returning the publish shell with no body is read as channel failure, not an empty doc. Mechanism recorded as undetermined per your caution.
-- 2. Orchestrator session-start now auto-fetches your summary doc at every session. The manual courier era is over on our side.
-- 3. ASK 1 - resume K6 posting. Your live doc still holds only the 2026-06-16 "Transport setup" stub - no session summary has ever been posted to it. Post the K6 summary at every session close from now on; it is read automatically on our side and your items stay marked unverified until the first one lands.
-- 4. ASK 2 - the file ID swap (already queued as your next session's first task per your own note). Send your summary doc's file ID and link-share it (anyone-with-link, viewer) so our fetch moves from /pub to the export URL. Until then we stay on your /pub with the shell-signature guard.
-- 5. This doc stays link-shared (anyone-with-link, viewer) at its export URL - your K1 v10 fetch is correct as-is. Authoring workflow unchanged on both sides: edit the doc, walk away.
-
-STILL OPEN WITH YOU (unchanged from the 7/02 digest - statuses unverified on our side until your first posted summary)
-- Sample-engagement CRM guidelines (couriered 6/30, with the Sample Conversion /pub link).
-- Alt-text / sync deploy close-out (from your 6/06 fix session).
-- Weights for 7 SKUs (with Hernan).
-- Ceppo P24-CEPAVOAS48 redirect target.
-- W13-MATBLA40 + W13-MATBLADE40 description-swap verify.
-
-NO NEW TASK ROWS this session beyond the two transport asks above.
-
-=====================================
-
-### 2026-07-04 (b) — title-test decisions (feed-paste is launch; skip 77 + FOSBON; Tab 4/5 feeder; Tab 6 control-drift)
-
-ADDITIVE TO YOUR 7/04 IN-PROJECT SESSION NOTES
-
-CONTEXT
-- Cesar ran a briefed session inside your project on 7/04; your summary, open items, and log already carry that. This share adds only what the orchestrator side produced after, plus decisions that change your title-test work.
-
-TITLE TEST - DECISIONS THAT AFFECT YOUR PLAN
-- Your Measurement Platform Structure Draft v2 was reviewed against the orchestrator's control-group tool. Verdict: complementary, not competing. Yours answers WHICH title categories moved results; ours answers WHETHER the retitling worked at all (control-group diff-in-diff). Both run.
-- Your live-feed paste IS the launch mechanism. The Merchant Center supplemental source plan on our side is dropped. Nothing overrides your pasted titles.
-- HARD REQUIREMENT ON THE PASTE: skip the 77 control SKUs plus W12-FOSBON40. The file KD_control_veto_block.txt (Cesar is uploading it to your project files) is both your veto-review list and the paste skip-list. If you want any of the 77 retitled now, name it and we swap in a substitute so the balance holds.
-- Your open item on the Content API for Tab 4 and Tab 5 is resolved: do not build it. The orchestrator script already pulls per-SKU impressions, clicks, and conversions from the current Merchant API and will write rows in your exact Tab 4/5 shape (SKU, Date Pulled, Window Label, Impressions, Clicks, CTR). The Content API you named is the sunset predecessor.
-- Tab 6 upgrade planned: subtract the control cohort's average drift from every category delta. One change, and your isolated view becomes a controlled read instead of raw before-after. Formula comes with the feeder delivery.
-- FOSBON40: its live feed title exists and is fine. The #N/A is a missing row (or key mismatch) in MC TITLES on the NEW side. Default is it sits out this round as PARKED; if you want it in, add the one row.
-- Day 1 discipline: the moment your paste goes live and products show approved, tell Cesar the timestamp - the baseline snapshot must run that day.
-
-ASK
-- Share the MC Title Generator sheet, view-only, with itilemosaic@gmail.com. This unblocks the pre-launch audit of the 441 new titles (character structure, material-first ordering, and the four families the ads data flagged: calacatta gold, mosaic, limestone, white travertine). Audit output comes back to you as a short fix-list before anything pastes.
-
-FYI - ADS SIDE (no action for you)
-- The live Shopping campaign was found carrying 55,060 inherited ad-group negatives that block its own product families (travertine, dolomite/white, cement, wood). A purge is being scoped. Relevant to you only as context: some product families have been ad-starved for structural reasons, not demand reasons. (Note, later: on 7/10 the "walling" read was retracted - those negatives sit on dormant ad groups, not the live path - so no purge; recorded here for continuity.)
-
-HYGIENE (from your own queue, gentle nudge)
-- Working-log duplicate pile: one-in-one-out per K6 - collapse when you can.
-- Scaffold v0_3 deletion is already on your list; v0.4 is current.
-
-=====================================
-
-### 2026-07-02 — ads / GTM / checkout / analytics; items touching your lane
-
-Mostly ads / GTM / checkout / analytics this session (Cesar-side). A few items touch your lane; the rest is context and your still-open items.
-
-DECISIONS AND POINTERS
-- 1. Pinterest conversion reporting is UNRELIABLE right now - do not cite it. Pinterest's dashboard reports phantom conversions (its "Subway Tile" campaign claimed $14,195.86 that does not exist in WooCommerce - checkout-attempt / retry artifacts, not sales). Root cause is a missing shared Event-ID dedup between the web tag and the Conversions API. Until fixed, do NOT use any Pinterest conversion or ROAS number in CRM, reporting, or analysis. WooCommerce is the single source of truth for what sold.
-- 2. A server-side attribution backbone is being built - coordinate CRM attribution capture with it, do not build a parallel one. Cesar is standing up a shared server-side attribution backbone (one shared event_id + hashed identifiers + event details through the server GTM container). It is the same infrastructure your CRM's attribution-by-design-at-lead-creation (P4, from the 6/30 guidelines) depends on. When you build CRM lead-attribution capture, plan to DRAW FROM this shared backbone rather than a separate path, so a lead's attribution matches the site's. Not built yet - a heads-up so the CRM design assumes it.
-- 3. Your title rewrites are confirmed LIVE. In the product-performance pull this session, product titles show the rewritten versions - the title-test changes are serving. (The analysis joined on item_id, which is stable, so the comparison held even though titles changed.)
-- 4. Discontinued-SKU feed hygiene - a task if you maintain the catalog/feed. Supplier discontinued p24-rubblup48 (Blue Vein / Statuary Azul); it was removed from the Google feed. Same wasted-ad-spend logic applies to any other discontinued/EOL SKUs still live in the feed. If you have or can produce an EOL/discontinued list, we should reconcile it against the current feed and pull them all at once rather than one at a time.
-
-STILL OPEN WITH YOU (pointers - status unverified on our side)
-- Sample-engagement CRM: fold in the analytics guidelines couriered 6/30 (WC join key, attribution-at-lead-creation P4, engagement log, provable-lift holdout, the sample-ship survey block with structured fields). Sample Conversion /pub link was included.
-- Alt-text / sync deploy from your 6/06 fix session: install Alt Text Manager v1.1 + Sites Product Sheet Sync v2.5, run the single-item tests, and close out so the fixes land in your continuity. Unverified since 6/06.
-- Weights for 7 SKUs (P63-BABARTP, W12-SANCONGLO36, W12-SANWHIGLO36, P48-AUPETRAS, P48-CROWHIP, QM03-CALGOLPHEX, SOF-HEDGM3X3) - with you + Hernan.
-- Ceppo P24-CEPAVOAS48 redirect target (WP redirect, not feed).
-- W13-MATBLA40 + W13-MATBLADE40 description-swap verify.
-
-NO NEW FRONT-END BUILD from this session. If the attribution backbone build later needs a stable class or data-attribute on a control, that ask will come separately when the GTM session runs.
-
-=====================================
-
-### 2026-07-01 — Content API retired -> Merchant API v1; identity locked; build spec (digested)
-
-As of session: 2026-07-01. Curated digest, not the full orchestrator log.
-
-DECISIONS AFFECTING YOUR WORK - adjudication of the "apply the Content API" ask
-The request ("apply the Content API in Project Settings like the Claude key") can't be actioned as written:
-- 1. The Content API is retired as of today. The nightly MC-diagnostics script was migrated to Merchant API v1 ahead of the Aug 18, 2026 hard sunset. The title-test tool must target Merchant API v1 (merchantapi.googleapis.com), not the Content API (shoppingcontent.googleapis.com / content/v2.1). If the feed-testing sheet calls Content API endpoints under the hood, it needs the same migration before its results are valid.
-- 2. There is no API key to paste. Merchant Center access uses the script's implicit Google OAuth token + the content scope in the manifest + a one-time GCP registration (registerGcp), completed today for MC 535752843. Nothing is applied in Project Settings the way the Claude key is - access is already wired under the business identity. (Not a KD error - the naming misleads.)
-- 3. Identity / custody - locked. The tool writes title changes to the live catalog, so it runs under itilemosaic@gmail.com, never a personal account. Cesar stands up the title-test script under the business identity and grants KD editor on that script + a Cesar-owned Sheet as her data surface. KD never holds Merchant Center access directly.
-- 4. Channel: access / credential / decision asks route through this handshake (surfaced in your session summary under "Needs from Cesar," adjudicated here), not out-of-band email.
-- 5. Requested from you: the current source of the feed/title-test tool (the sheet's bound script), to diff against our Merchant API v1 version (TitleTest.gs).
-
-BUILD SPEC - digest (full spec lives in this project's files; TitleTest.gs is the reference implementation)
-- No native title-experiment API exists - it is a DIY cohort test: hold an offer_id -> control/variant map in a config tab; capture a per-SKU baseline (product_performance_view) BEFORE any title change; write variant titles via productInputs.insert into a SUPPLEMENTAL source (needs a title-precedence merge rule set in the MC UI, or the primary feed keeps winning); after the window, re-pull and compare variant-vs-control deltas (diff-in-diff).
-- Guardrails: WooCommerce stays source of truth (feed precedence P1 - confirm variant titles persist against the nightly re-process before trusting the test); review titles before live (P3); baseline + post-window measurement designed in, not bolted on (P4); products update at most twice/day with a several-minute processing lag - don't read back immediately.
-- NOTE (superseded 7/04): the supplemental-source swap approach was later dropped - the live-feed paste is the launch mechanism. Kept here for the record.
-
-DROP-IN KD_FeedTest ROWS
-- [P1 - blocked-on-Cesar] Stand-up: title-test script created under itilemosaic@gmail.com; KD granted editor on the script + a Cesar-owned data Sheet.
-- [P1] Migrate any Content API calls in the feed-testing sheet to Merchant API v1; re-validate.
-- [P1] Capture baseline product_performance_view snapshot (by offer_id) before any title swap.
-- [P2] (superseded 7/04 by feed-paste) Variant title swap via supplemental source; confirm persistence.
-- [P2] Post-window measurement: re-pull, compute variant-vs-control deltas.
-
-POINTERS (no secrets)
-- Merchant API footing proven: diagnostics migrated, registerGcp done (MC 535752843), content scope live under itilemosaic@gmail.com.
-- Identity: itilemosaic@gmail.com owns Merchant Center + the Cloud project + the script. No credential in this doc.
+- We found we'd each built a different test: mine is a variant-vs-control holdout (measures lift net of market drift), yours buckets each edit by keyword category (finish/look/room). They answer different questions. For this test the holdout is the official result and yours is the "which kind of edit worked" layer on top. After the test closes we should decide whether to merge them or keep yours as a standing second layer — no action now.
