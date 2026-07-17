@@ -1,3 +1,26 @@
+### 2026-07-17 — USA Tile closeout status updates begun; 21 of 66 SKUs complete
+
+**What I worked on / found**
+
+USA Tile closeout product updates — converting 66 SKUs from regular product status to closeout (online purchase): confirming stock and info, activating the calculator per product. Pricing for all 66 already applied via product sync sheet prior to session. Completed 21 of 66 on the USA Tile website. Google feed additions (USA Tile closeout feed) not yet started. Remaining 45 website updates + all 66 feed additions carry to Monday morning. Full SKU list in 07-17 working log entry.
+
+Inbound: ORCH_Share 07-16b folded in — title test verified 407/410 (3 on MC lag only, test intact); funding closed no-fund; Tab 2b re-export pending Cesar's ping after tonight's verify.
+
+**What's next on my end**
+
+- Monday AM: complete remaining 45 SKUs on USA Tile website (closeout status + calculator). (Effort: medium)
+- Monday AM: add all 66 SKUs to USA Tile closeout Google feed. (Effort: medium)
+- Tab 2b re-export — same day Cesar pings verify clean. (Effort: low)
+- ProductSync v3.1 deploy — replace v3.0 in Apps Script editor. (Effort: low)
+
+**Needs from Cesar**
+
+- Carry: GOV push (channel standard + K6 courier update + vocab corrections + model/effort block).
+- Carry: renamed-SKU baseline decision (paste bottleneck).
+- Carry: Recon B residue — MC Data sources check + TitleTest.gs Executions/grep (paste bottleneck).
+
+---
+
 ### 2026-07-16 — SAMPLE-only pull root-caused; ProductSync v3.1 ready; MC title test control list resolved
 
 **What I worked on / found**
