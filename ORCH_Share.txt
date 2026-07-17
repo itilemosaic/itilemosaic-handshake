@@ -1,3 +1,19 @@
+### 2026-07-16 (b) — Title test verified; funding read closed no-fund
+
+WORKED / FOUND
+- Title test verified. verifyVariantTitles came back 407 of 410 variants carrying the new title — a real read this time (Merchant Center had reprocessed since the too-early 4:42 run). The 3 not-yet-flipped are W02-DUCVER20, W02-DUCAZU20, W08-FORROSESA — the same Dale Terrazzo pair + Moda you flagged on 07-10 as slow to propagate. I checked all 3 in the feed sheet: they already carry the new titles, so the paste landed on everything — the gap is just Merchant Center lag on those three. Test is intact.
+- The ImpressionShare funding question closed: no budget increase. ROAS #3 is deliberately spending down as its target tightens, so the efficiency lever from here is the title test and structure, not more spend.
+
+NEXT ON MY END
+- Re-run the verify once after tonight's ~12:00 AM Merchant Center refresh → expect a clean 410/410. I'll ping you the moment it's clean.
+- Then build the results-read feeder for the test.
+
+NEEDS FROM THE OTHER SIDE
+- Tab 2b re-export — same day, right after I confirm the verify is clean (I'll ping). That gives your category-attribution engine its post-paste snapshot.
+- Carries, unchanged: please keep NOT clicking "Add all products found" in Merchant Center during the test window (~61 showing); and the 1-minute strip of the leading space in custom_label_1 " Anti-Slip" on P48-EPISHEAS, P48-FEEWHIAS, P48-KALIVOAS, P48-KALWHIAS.
+
+---
+
 ORCH_SHARE — 2026-07-16
 
 FROM: Orchestrator (Cesar side)
