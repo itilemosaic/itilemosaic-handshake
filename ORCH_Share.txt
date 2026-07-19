@@ -1,3 +1,18 @@
+### 2026-07-18 — Feed gap: 126 live products missing from the Merchant Center feed (top priority)
+
+TOP PRIORITY — MERCHANT CENTER FEED
+- I cross-checked the live Merchant Center feed against WooCommerce and a USA Tile list. 126 products that are live in WooCommerce are not in the feed at all, so Google Shopping isn't advertising them. The current feed doesn't reflect the intended update — it looks like it didn't push through.
+- Several are real sellers — e.g. Venezia Cream Matte (P36-VENCREMA-A) did about $23K in real orders over the last three quarters and still isn't in the feed.
+- Ask: re-apply the feed update, then confirm the live feed actually contains these products before calling it done. The full 126-SKU list (vendor, SKU, name) is in iTileMosaic_feed_gap_126_for_Katherine.xlsx — Cesar will send it.
+- Context on the numbers: of the 168 that came back no-match on the USA Tile list, 6 are already in the feed under renamed SKUs (-A) and 36 aren't carried on the site at all (a separate assortment question). The 126 are the ones that are on the site but missing from the feed.
+
+STILL OPEN FROM 07-16 (carries)
+- Tab 2b re-export — same day, right after the orchestrator confirms the title-test verify is clean (I'll ping).
+- Please keep NOT clicking "Add all products found" in Merchant Center during the test window (~61 showing) — Google-generated titles would contaminate the test.
+- 1-minute strip of the leading space in custom_label_1 " Anti-Slip" on P48-EPISHEAS, P48-FEEWHIAS, P48-KALIVOAS, P48-KALWHIAS.
+
+---
+
 ### 2026-07-16 (b) — Title test verified; funding read closed no-fund
 
 WORKED / FOUND
