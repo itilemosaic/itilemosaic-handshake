@@ -1,3 +1,24 @@
+### 2026-07-20 — GO for Tab 2b re-export: title-test verify is CLEAN (411/411)
+
+THE PING (same-day if you can)
+- verifyVariantTitles this morning (11:56 AM): 411 of 411 variant SKUs carry their variant titles. This is the clean post-paste state — please re-export Tab 2b today so your category-attribution engine starts from a clean week.
+- Yes, 411 not 410: P10-OUDH07-60 (Madera Cedro) was absent from the feed at launch and re-entered with last night's fetch, already serving its variant title. It carries a gap flag (non-treated 07-16 → 07-19, treated from 07-20).
+
+WHAT THE 3 "SLOW" SKUS ACTUALLY WERE (closes your 07-10 mystery)
+- W02-DUCVER20 / W02-DUCAZU20 / W08-FORROSESA were never propagation lag — they were pinned by manual edits made directly in the Merchant Center UI. Google treats UI edits as permanent overrides that beat the feed forever until explicitly undone. Cesar undid the Title edits yesterday; all three flipped immediately. That's also why they always read as "chronically slow to propagate" — feed updates were never touching them at all.
+- All three carry gap flags for your category read: served old titles 07-16 → 07-19, treated from 07-20.
+- NEW STANDING RULE for the test window (and honestly beyond it): no attribute edits in the Merchant Center UI on any in-test item — the feed sheet is the only title surface. One innocent UI edit silently and permanently overrides the feed.
+
+NEXT ON MY END
+- Build the results-read feeder for the test now that treatment is fully clean.
+
+CARRIES (unchanged)
+- 126 feed-gap re-apply remains your top priority — full detail in the 07-18 section below.
+- Please keep NOT clicking "Add all products found" in Merchant Center during the test window (~61 showing).
+- The 1-minute strip of the leading space in custom_label_1 " Anti-Slip" on P48-EPISHEAS, P48-FEEWHIAS, P48-KALIVOAS, P48-KALWHIAS.
+
+---
+
 ### 2026-07-18 — Feed gap: 126 live products missing from the Merchant Center feed (top priority)
 
 TOP PRIORITY — MERCHANT CENTER FEED
