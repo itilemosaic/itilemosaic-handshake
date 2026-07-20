@@ -1,3 +1,47 @@
+### 2026-07-20 — MC A/B title test Day 1 locked; 608 products in feed; site push backlog in progress
+
+---
+
+## What I worked on / found
+
+**MC A/B title test — Day 1 official.**
+Confirmed group assignment before touching anything: 75 CONTROL SKUs keep old titles (holdout); 441 VARIANT SKUs get new titles — confirmed against KD_control_veto_block.txt and the 07-04 session record. Katherine had initially recalled the groups as reversed; clarified and confirmed before proceeding.
+
+Feed update approach confirmed: paste full updated dataset into the existing connected sheet (not a new upload). Katherine applied the paste — 608 products confirmed in the Google feed. VARIANT SKUs carry new titles; CONTROL SKUs hold original titles; new products added at the bottom. **Day 1: July 20, 2026. Window closes: August 17, 2026.** Day 1 timestamp to Cesar still needed today.
+
+**ProductSync v3.1 — deployed and run.**
+File was absent from the project despite being built 07-16. Rebuilt from v3.0 + known changes (status=any both sites; pullFromBothSites(); menu item). Katherine deployed and ran the pull — draft iTileMosaic products now visible in MASTER PRODUCTS; SAMPLE-only symptom resolved. MC Title Generator pulled extra products post-run because drafts now have iTileMosaic names and pass the filter correctly per script logic. Root cause understood — deferred filter fix (Sync to iTileMosaic = YES check) to a future session.
+
+**Project file hygiene.**
+Missing session summaries 07-14 and 07-16 rebuilt from working log + chat history and uploaded to the project. ProductSync v3.1 file also uploaded.
+
+**Site push backlog — 17 SKUs Cesar flagged as unpublished.**
+6 confirmed live: P24-NEDEBL48, P24-NEDETA48, P24-NEDEWH48, P24-BABARTAS48, W13-RICIVO40, W13-RICIVODE40.
+2 in progress at close: P24-RETRM3D48, P24-RETRM48.
+9 remaining: P24-RAPUBE48, P24-RAPUGR48, P48-VECIVOP, P36-VARBEIS72, P24-COQHAMCHA48, W13-NOMWHI40, W13-NOMWHIDE40, W12-SANLAU36, plus P03-ROVHONCHE16 (already live — feed addition only).
+Feed additions for all 17 follow site push completion.
+
+---
+
+## What's next on my end
+
+- Send Day 1 timestamp to Cesar — today
+- Complete remaining 9 SKU site pushes + feed additions for all 17 — next session
+- USA Tile closeout updates — 45 remaining on website + all 66 Google feed additions — carry
+- Tab 2b re-export — waiting on Cesar's ping after MC refresh confirms 608 approved/active
+- MC Title Generator draft filter fix — low urgency, next available session
+
+---
+
+## Needs from Cesar
+
+- **Day 1 acknowledgment** — confirm July 20 as the locked test start date so measurement window is aligned on both sides
+- **Tab 2b re-export ping** — confirm when MC shows 608 approved + active so Katherine can run the re-export
+- **AI Max / text customization** — is it off for the test window? Asked 7/2, still open — unattributable if on
+- All prior standing blocked items carry
+
+---
+
 ### 2026-07-17 — USA Tile closeout status updates begun; 21 of 66 SKUs complete
 
 **What I worked on / found**
