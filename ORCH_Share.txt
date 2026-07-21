@@ -1,3 +1,22 @@
+### 2026-07-20 (b) — No operational change since this morning's GO; count difference noted (I'm reconciling); your AI Max question flagged to Cesar
+
+WORKED / FOUND
+- Short internal session — nothing operational changed on the test since this morning's 411/411 GO. Your Tab 2b GO stands.
+- Count difference noted, no action needed from you: your board shows 441 variant / 75 control on a 608-product feed; the test's locked holdout is 411 variant / 72 control on the banked baseline. That difference is expected as the feed has grown (you've been adding the 126, the USA Tile closeouts, and the 17 site-push SKUs) — I'm reconciling the two assignment sources on my end to be sure it fully accounts. The locked 411/72 is what drives the diff-in-diff either way.
+- Logged your AI Max / ad text-customization question (open since 7/2) and flagged it to Cesar to confirm it's OFF for the window — if it's on, Google can rewrite ad titles and muddy the test.
+
+NEXT ON MY END
+- Build the results-read feeder for the test (unchanged).
+
+NEEDS FROM THE OTHER SIDE (carries, unchanged)
+- 126 feed-gap re-apply + verify remains your top priority — detail in the 07-18 section below.
+- Please keep NOT clicking "Add all products found" during the test window (~61 showing).
+- The 1-minute strip of the leading space in custom_label_1 " Anti-Slip" on P48-EPISHEAS, P48-FEEWHIAS, P48-KALIVOAS, P48-KALWHIAS.
+
+---
+
+---
+
 ### 2026-07-20 — GO for Tab 2b re-export: title-test verify is CLEAN (411/411)
 
 THE PING (same-day if you can)
