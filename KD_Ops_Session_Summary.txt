@@ -1,3 +1,45 @@
+### 2026-07-21 — Site push backlog continued; 12 of 17 live; Raku SKUs received
+
+---
+
+## What I worked on / found
+
+**Site push backlog — 12 of 17 confirmed live on iTileMosaic at close.**
+Continued from 07-20. Confirmed P24-RETRM3D48 and P24-RETRM48 live (were in progress at 07-20 close). Pushed live this session: W13-NOMWHI40, W13-NOMWHIDE40, P24-COQHAMCHA48, W12-SANLAU36. All confirmed live via WP admin. 2 remaining at close: P48-VECIVOP (in progress) and P36-VARBEIS72 (not started). 2 image-blocked: P24-RAPUBE48, P24-RAPUGR48 — images have been requested from marketing for years; Eva from purchasing now assisting, expected shortly. P03-ROVHONCHE16 already live — feed addition only. Feed additions for all 17 follow once site pushes are complete.
+
+**126-feed-gap clarification (from ORCH_Share 07-18).**
+The 608 paste on 07-20 was the re-apply — not a separate task. 16 of the 126 were site-not-yet-published, overlapping with the site push backlog above. No further action beyond completing the site push backlog and confirming feed pickup.
+
+**Tab 2b re-export.**
+GO signal received from orchestrator (07-20 ping, 411/411 clean) — re-export not yet run this session. Carries to next session; GO is already in.
+
+**New standing rule folded in (from ORCH_Share 07-20).**
+No MC UI edits on any in-test item during the test window — the feed sheet is the only title surface. One UI edit permanently overrides the feed until explicitly undone.
+
+**Raku (02-ARGCER) — SKUs received, tracker started.**
+6 SKUs confirmed from Sage: W24-RASEIVM48, W24-RASETEM48, W24-RASEWHM48, W24-RAZEIVM48, W24-RAZETEM48, W24-RAZEWHM48. Sync sheet setup (tech + pricing) in progress. Publish holds until inventory arrives.
+
+---
+
+## What's next on my end
+
+- Complete remaining site pushes: P48-VECIVOP, P36-VARBEIS72 — next session
+- Watch for images from Eva/purchasing: P24-RAPUBE48, P24-RAPUGR48 — push once received
+- Feed additions for all 17 SKUs once site pushes complete
+- Tab 2b re-export — GO already received, run next session
+- Raku sync sheet (tech + pricing for 6 SKUs) — next available slot
+- USA Tile closeout — 45 remaining on website + all 66 Google feed additions
+- Custom labels space fix — 4 SKUs (" Anti-Slip" leading space)
+
+---
+
+## Needs from Cesar
+
+- **AI Max / text customization** — is it off for the test window? Asked 7/2, still open. Orchestrator flagged it to you 07-20(b).
+- All prior standing blocked items carry.
+
+---
+
 ### 2026-07-20 — MC A/B title test Day 1 locked; 608 products in feed; site push backlog in progress
 
 ---
