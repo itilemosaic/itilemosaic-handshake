@@ -1,3 +1,64 @@
+### 2026-07-22 — Feed re-apply confirmed landed (126→17); feed-addition tail, stale-draft pulls, price fixes, and 1 WC typo
+
+WORKED / FOUND
+- Verified your 07-20 feed re-apply against the WC-vs-Catalog reconciliation. The
+  missing-from-feed gap dropped from 126 (07-18) to 17, and VENCREMA-A
+  (P36-VENCREMA-A, ~$23K earner) is now in the feed. The paste landed — not a
+  repeat of the 07-18 non-apply. Thanks for the fast turnaround.
+- The 17 remaining are all "published on the site, no feed row yet" — consistent
+  with your note that feed additions follow the site pushes.
+- Also ran the price column: of 43 flagged mismatches, most are noise (per-piece
+  box-math false positives + rounding). Only ~12 are genuinely wrong, and they
+  cluster on the large-format tiles — details under FEED PRICE FIXES below.
+
+NEXT ON MY END
+- Building a new Shopping campaign on the pre-Aug-2025 satellite structure
+  (per-material/format groups on shared negatives, not the catch-all), weighted to
+  large-format big-order SKUs. The genuine price fixes below are a prerequisite for
+  advertising those specific SKUs. I'll share the structure once anchors are picked
+  — no action from you on the campaign yet.
+
+NEEDS FROM THE OTHER SIDE
+
+1) FEED ADDITIONS — 17 SKUs live on the site but not yet in the feed
+   - 7 on your known site-push backlog: P03-ROVHONCHE16, P24-COQHAMCHA48,
+     P24-RETRM3D48, P24-RETRM48, W12-SANLAU36, W13-NOMWHI40, W13-NOMWHIDE40
+   - 10 NOT on your stated backlog (may be new to you): P24-NEDEBL48, P24-NEDETA48,
+     P24-NEDEWH48, P24-BABARTAS48, P24-EVOMAT, P48-ONYUNIPOL-A, W13-RICIVO40,
+     W13-RICIVODE40, P30-WONBASM, P10-CROWOWH80
+
+2) FEED REMOVALS — 7 draft-in-WC SKUs still in the feed (advertising unbuyable pages)
+   - P12-KALARC71, P12-KALHAY71, P12-KALROB71, W14-LOGENRW40, W14-LOGENWP40,
+     SOF-CRLMM2X4, and P24-PEBSAN48 (this one is "private," not draft — pull unless
+     it's intentionally trade-only)
+   - Two others the tab flags that I'm holding, NOT asking you to pull: P36-STONEMP72
+     (ties to your pending Sage spot-check) and P10-OUDH07-60 / Madera Cedro (live
+     title-test variant — must stay; I'm tracking its status on the test side)
+
+3) FEED PRICE FIXES — feed price wrong vs WooCommerce (WC is source of truth; the
+   likely cause is the sq-ft-per-box figure being off by a factor of 2)
+   - HIGH — feed price is exactly 2x off; Google will disapprove or mis-price, and
+     these are large-format we want to advertise:
+     - Feed showing DOUBLE the real price: P24-TUSBIA48 (Siena Bianco 24x48),
+       P24-TUSAVO48 (Siena Avorio 24x48), P48-CAPSANPOL (Capadocia Sand 48x48)
+     - Feed showing HALF: P48-MONBLANA-A (Quartz Mont Blanc 48x48), P48-COQCHAM
+       (Mara Champagne Pro 48x48)
+   - MODERATE — 20-60% off, same root cause, mostly large-format: P24-PEBTAU48 &
+     P24-PEBWHI48 (Grava Taupe/White 24x48), P24-LUDOGHM48 (Dorato Ghiaccio 24x48),
+     W14-LONEWH40 (Nido White 14x40), W14-LOGENGR40 (Adora Green 14x40), P10-OUDEBO60
+     (Legno Ebony 10x60), W12-FOSBON40-A (Relic Bone 12x40)
+   - IGNORE — known false positives, no action: the 13 Coastal/Gradient "Jolly" trim
+     pieces (W0.5-BOJO* / W0.5-NOJO*). They flag only because they're sold per-piece
+     and the check runs box-math on them.
+   - Exact per-SKU figures are in the WC-vs-Catalog tab (Feed Price vs WC Price); or
+     compare your feed box price / box-coverage against the WC per-sqft.
+
+4) WC DATA FIX — one corrupt price entry
+   - P09-APUGOLMHE12 (Bergamo Gold 3x3 Hexagon) shows $49,331/sqft in WooCommerce —
+     should be ~$63/sqft. This one is a WC entry, not a feed issue.
+
+---
+
 ### 2026-07-20 (b) — No operational change since this morning's GO; count difference noted (I'm reconciling); your AI Max question flagged to Cesar
 
 WORKED / FOUND
