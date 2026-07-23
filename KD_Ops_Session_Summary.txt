@@ -1,3 +1,39 @@
+### 2026-07-22 — Site push backlog complete (15/17); ORCH_Share 07-22 folded in; feed + closeout carry to 07-23
+
+---
+
+## What I worked on / found
+
+**Site push backlog — 15 of 17 confirmed live on iTileMosaic.**
+P48-VECIVOP confirmed live (was in-progress at 07-21 close). P36-VARBEIS72 confirmed live (was not started at 07-21 close). Site push backlog is now effectively complete — only P24-RAPUBE48 and P24-RAPUGR48 remain, blocked on images (Eva/purchasing working).
+
+**ORCH_Share 07-22 folded in — four new task areas.**
+(1) Orchestrator confirmed 07-20 feed re-apply landed — missing-from-feed gap dropped from 126 to 17. Feed additions for all 15 live SKUs + 10 additional orchestrator-flagged SKUs (P24-EVOMAT, P48-ONYUNIPOL-A, P30-WONBASM, P10-CROWOWH80, plus the 6 already on backlog) pending. (2) 7 draft-in-WC SKUs in feed to remove: P12-KALARC71, P12-KALHAY71, P12-KALROB71, W14-LOGENRW40, W14-LOGENWP40, SOF-CRLMM2X4; P24-PEBSAN48 is "private" — verify trade-only intent before removing. (3) Feed price fixes: 5 HIGH (2x or ½x off — P24-TUSBIA48, P24-TUSAVO48, P48-CAPSANPOL, P48-MONBLANA-A, P48-COQCHAM) + 7 MODERATE (20–60% off); root cause is sq-ft-per-box factor-of-2. (4) WC data corruption: P09-APUGOLMHE12 showing $49,331/sqft — should be ~$63/sqft; fix in WC backend.
+
+**Session ended without close-out; close-out produced retroactively at 07-23 morning open.**
+
+---
+
+## What's next on my end
+
+- iTileMosaic feed additions for all 15 live SKUs + P03-ROVHONCHE16 + 10 orchestrator-flagged additional SKUs — today (07-23), will notify when complete
+- USA Tile closeout — 45 remaining website + all 66 Google feed additions — today (07-23) after feed work
+- New SKUs with images now available — push live today after the above two
+- Feed removals (7 draft-in-WC) + price fixes (12 SKUs) — next available slot after today's priorities
+- WC data fix P09-APUGOLMHE12 — quick fix, next session
+- Tab 2b re-export — GO already received, run when available
+- Raku sync sheet (tech + pricing for 6 SKUs) — next available slot
+
+---
+
+## Needs from Cesar
+
+- **P24-PEBSAN48** — is this intentionally trade-only (private)? Orchestrator flagged it for feed removal but held pending intent confirmation. Quick yes/no.
+- **AI Max / text customization** — still open from 7/2: is it off for the test window? Orchestrator flagged this to you 07-20(b).
+- All prior standing blocked items carry.
+
+---
+
 ### 2026-07-21 — Site push backlog continued; 12 of 17 live; Raku SKUs received
 
 ---
