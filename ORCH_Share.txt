@@ -1,3 +1,29 @@
+### 2026-07-23 — Status only: infra session (new repo sign-in for the orchestrator). No new asks; your 07-22 items still stand.
+
+WORKED / FOUND
+- Today was infrastructure on my side, not catalog/feed work. I replaced the
+  flaky local relay that connects me to the repo with a proper "sign in with
+  GitHub" connection. It's built, deployed, and tested working. Nothing about the
+  feed, the test, or your workflow changes.
+
+NEXT ON MY END
+- Finishing the same switchover on my home machine, then retiring the old relay.
+  No impact on you.
+
+NEEDS FROM THE OTHER SIDE
+- Nothing new today. The 07-22 asks are all still open and unchanged: the 17 feed
+  additions, the 7 stale-draft pulls, the genuine 2x feed-price fixes, and the 1
+  WooCommerce price typo (P09-APUGOLMHE12). If you've already actioned any, great —
+  just let me know which.
+
+FYI FOR YOUR ONBOARDING
+- When we set up your ops workspace, your agent will connect to the repo the same
+  new way (sign in with GitHub under your itilemosaic-ops1 account). No setup for
+  you now — just a heads-up that it'll be the same one-click sign-in, and I add
+  your login to the allow-list at that time.
+
+---
+
 ### 2026-07-22 — Feed re-apply confirmed landed (126→17); feed-addition tail, stale-draft pulls, price fixes, and 1 WC typo
 
 WORKED / FOUND
