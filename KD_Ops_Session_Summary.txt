@@ -1,3 +1,42 @@
+### 2026-07-23 — USA Tile website closeout complete (66/66); iTileMosaic feed additions complete (15/15); USA Tile closeout feed carries to 07-24
+
+---
+
+## What I worked on / found
+
+**Session opened with retroactive 07-22 close-out.** 07-22 had no formal close-out — produced at 07-23 open. Working log, Open Items, and session summary for 07-22 all generated; 07-22 summary committed to GitHub (SHA: 375326018b). Channel-integrity check: outbound was behind (07-21) — 07-22 posted before proceeding. ✓
+
+**Orchestrator-flagged feed additions (4 SKUs) — confirmed intentionally absent.** P24-EVOMAT, P48-ONYUNIPOL-A, P30-WONBASM, P10-CROWOWH80 were flagged by the orchestrator in the 07-22 ORCH_Share as published-but-no-feed-row. Confirmed with Katherine: all 4 are Type D (discontinued), under the $800 iTileMosaic threshold — intentionally removed from the iTileMosaic feed and MC, USA Tile only. Already documented in the 07-10 records (under-$800 removal pass). Not a gap — orchestrator's reconciliation lacked visibility into the threshold-removal decision. Orchestrator should update their records accordingly.
+
+**iTileMosaic Google feed additions — 15 of 15 complete.**
+All 15 live SKUs added to the Google feed per Cesar's direction: P24-NEDEBL48, P24-NEDETA48, P24-NEDEWH48, P24-BABARTAS48, W13-RICIVO40, W13-RICIVODE40, P48-VECIVOP, P03-ROVHONCHE16, P36-VARBEIS72, P24-RETRM3D48, P24-RETRM48, P24-COQHAMCHA48, W13-NOMWHI40, W13-NOMWHIDE40, W12-SANLAU36.
+
+**USA Tile website closeout updates — 66 of 66 complete.**
+Remaining 45 SKUs updated from Regular → Closeout (online purchase) on the USA Tile website; pricing confirmed and calculator activated on each. Full 66 now done across two sessions (21 on 07-17, 15 + 30 batches today). Google feed additions for all 66 carry to 07-24.
+
+---
+
+## What's next on my end
+
+- USA Tile closeout Google feed — add all 66 SKUs (07-24, first priority)
+- New SKUs with images — push live on iTileMosaic (07-24, after feed)
+- Feed removals — 7 draft-in-WC SKUs (confirm P24-PEBSAN48 intent with Cesar first)
+- Feed price fixes — 5 HIGH priority SKUs (P24-TUSBIA48, P24-TUSAVO48, P48-CAPSANPOL, P48-MONBLANA-A, P48-COQCHAM) next available slot
+- WC data fix — P09-APUGOLMHE12 ($49,331/sqft → ~$63/sqft), quick backend fix
+- Tab 2b re-export — GO already received, run when available
+- Raku sync sheet setup (tech + pricing for 6 SKUs)
+
+---
+
+## Needs from Cesar
+
+- **Orchestrator: 4 SKUs confirmed not a feed gap.** P24-EVOMAT, P48-ONYUNIPOL-A, P30-WONBASM, P10-CROWOWH80 — Type D discontinued, under $800 iTileMosaic threshold, intentionally removed 07-10. Please update orchestrator records so they stop surfacing as missing-from-feed.
+- **P24-PEBSAN48** — intentionally trade-only (private status)? Need yes/no before removing from feed.
+- **AI Max / text customization** — still open from 7/2: off for the test window?
+- All prior standing blocked items carry.
+
+---
+
 ### 2026-07-22 — Site push backlog complete (15/17); ORCH_Share 07-22 folded in; feed + closeout carry to 07-23
 
 ---
