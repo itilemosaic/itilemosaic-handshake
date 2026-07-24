@@ -1,3 +1,26 @@
+### 2026-07-24 — MCTitleGenerator v2.1; USA Tile closeout feed 66 SKUs added; 150 SKUs reviewed; workflow charts for Tabatha
+
+**Worked / found**
+- Built MCTitleGenerator v2.0 → v2.1: two-tab SKU-input model (iTM GOOGLE FEED / UST GOOGLE FEED). onEdit auto-populate (installable trigger) pulls 9 fields from MASTER PRODUCTS including USA Tile Description. One Claude API call per SKU returns MC title + shortened meta description as JSON (meta targets 150–300 chars). Approve writes to site-specific columns: iTM tab → MC Title + MC Meta Description; UST tab → USA Tile MC Title + USA Tile MC Meta Description. Replaces v1.1 and the old bulk Pull flow.
+- USA Tile closeout Google feed: 66 new closeout SKUs added, auto-populated, MC titles + meta descriptions generated. Pending feed update.
+- 150 SKUs reviewed from your list: 57 removed from USA Tile closeout Google feed + status set to Private in WooCommerce (confirmed by Katherine) — giving weekend for Google to process, Monday follow-up. 91 not present in feed — no action.
+- 21 products flagged as not approved in MC due to draft status — not on removal list, lower quantity than qualified. 1 confirmed. Email sent to you on remaining 20; awaiting your call.
+- Three product descriptions written: Woodfeel Concept Roble 30x30 Matte, Bari Marfil 24x48, Plain Mist Soft 30x60.
+- Sample Order + Regular Order process workflow charts built for Tabatha (PDF exports). Both include ClearSale fraud review branch. Sample flow includes proposed CRM follow-up step.
+
+**Next on my end**
+- Monday: check Google propagation for 57 Private items.
+- Action 21 not-approved MC products once you respond.
+- Feed removals — 6 ORCH-flagged draft-in-WC SKUs (P12-KALARC71, P12-KALHAY71, P12-KALROB71, W14-LOGENRW40, W14-LOGENWP40, SOF-CRLMM2X4). P24-PEBSAN48 still awaiting your call.
+- Feed price fixes — 12 SKUs (5 HIGH, 7 MODERATE). Tab 2b re-export. WC data fix P09-APUGOLMHE12.
+
+**Needs from you**
+- 21 not-approved MC products (draft status, not on removal list) — keep in feed or remove? Email sent.
+- P24-PEBSAN48 — trade-only / private intent? Confirm before feed removal.
+- All standing BLOCKED items carry.
+
+---
+
 ### 2026-07-23 — USA Tile website closeout complete (66/66); iTileMosaic feed additions complete (15/15); USA Tile closeout feed carries to 07-24
 
 ---
