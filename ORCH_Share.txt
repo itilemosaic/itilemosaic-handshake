@@ -1,3 +1,19 @@
+### 2026-07-24 — Marketing/ops session: ROAS #3 rebuild, factory-catalogue locator, Google-title insights. A few things for your side.
+
+WORKED / FOUND
+- Rebuilt the ROAS #3 large-format floor ad-groups from a live WC export (394 SKUs) and joined each to its ORIGINAL USA Tile factory name (SKU = Sage ItemCode, 393/394). Cesar is vetting the "look" per group.
+- Big one: built a factory-catalogue locator for all 394 floor SKUs (which manufacturer, catalogue link, product page), and filed 41 catalogue PDFs into their V:\...\Tile images\<Collection> folders. Then read ~128 catalogues and pulled Google-title improvement insights.
+
+NEEDS FROM YOUR SIDE (KD)
+- WC collection-tag gap: several SKUs carry only generic WC categories with NO series/collection tag — e.g. Suma Grey & White 48x48 (P48-OVTIMGR / P48-OVTIMWH). Shows up as a blank "Collection". Worth adding the series tag when you get a chance; can send the full missing list.
+- Heads-up (not action yet): the catalogue read surfaced Google-title corrections — several SKUs are tagged the WRONG look (e.g. Continental = concrete not stone; Appia = travertine not stone; Purity/Talo = marble not stone) and a couple say "Ceramic" that are actually Porcelain. These will become feed-title edits, but we're HOLDING them until the live title test finishes so we don't contaminate it. Will coordinate the batch with you then.
+- Still open from 07-22 (unchanged): the 17 feed adds, 7 stale-draft pulls, 2× price fixes, and the P09-APUGOLMHE12 WooCommerce typo — let me know which you've actioned.
+
+FYI
+- Google Drive + USA Tile read-layer are now connected on the orchestrator side, so I can read the feed / WC tabs / Sage item data directly (no more manual CSV exports).
+
+---
+
 ### 2026-07-23 — Status only: infra session (new repo sign-in for the orchestrator). No new asks; your 07-22 items still stand.
 
 WORKED / FOUND
