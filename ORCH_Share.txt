@@ -1,3 +1,19 @@
+### 2026-07-26 — Catalog copy-forward is now a tool you can run (coming your way); a few catalogs still need your call
+
+WORKED / FOUND
+- Sorted out how yesterday's vendor catalogs should land in iTileMosaic, and built you a small tool that files each one into the right collection's "Vendor Assets" folder automatically. It previews first (changes nothing), then creates any missing collection folders and copies the PDFs in. It only ADDS — never overwrites or deletes.
+- Good news: the established collections are already filed correctly. The real work is ~56 newer lines that don't have an iTileMosaic folder yet (the tool creates them), plus 12 that need your judgment.
+
+NEXT ON MY END
+- Cesar is finalizing how to get you the tool + its plan file (they're on a V: folder you don't have access to yet). Once sorted you'll get: the script, the plan, and a short README.
+
+NEEDS FROM YOUR SIDE (KD)
+- When you get it: run the preview, check the ~56 new folder names look right, then run it for real. Then rule on the 12 flagged items (mostly the "_Unmatched Catalogs" holding folder + a couple with no clean name — Wood/Kirova, Raku, the Calacata Gold folder).
+- Still open from 07-22/24: the 17 feed adds, the stale-draft pulls, the 2x price fixes, and the P09-APUGOLMHE12 WooCommerce typo — let me know what's actioned.
+- WC collection-tag gap (blank Collection on Suma Grey/White 48x48 etc.) when you get a chance.
+
+---
+
 ### 2026-07-24 — Marketing/ops session: ROAS #3 rebuild, factory-catalogue locator, Google-title insights. A few things for your side.
 
 WORKED / FOUND
