@@ -1,3 +1,23 @@
+### 2026-07-27 — Got your 12 answers — 9 set, Kirova skipped, 2 to finish
+
+Worked / found
+- Thanks, your naming calls on the 12 are folded. Nine are settled, and I've noted them to add to the master name map so they file automatically next time.
+- Kirova we'll leave alone per your note (shows zero in Sage / "Special Orders" — not one we enter). Good call.
+
+Next on my end
+- Add those nine (then Raku, once you've named it) to the master name map so the next intake auto-files them.
+- Heads-up before anyone re-runs the filer tool: since you've already made these folders by hand, we should make sure your folder names match what the tool expects ("<Brand> Porcelain Tile" / "<Brand> Ceramic Tile") — otherwise it could create a second folder for the same collection. I'll flag any that don't line up rather than let it double up.
+
+Needs from your side (KD)
+- Raku (Argenta): the iTile brand name once you finish the rename today.
+- Caementum → Lute vs the separate Cortina (the Refin wood-look under Chaletwood): ping me when those separate renames are done.
+- Quick access confirm: your note reads like you're creating/renaming folders in the iTileMosaic drive directly — can you confirm you have write access to V:\iTileMosaic? We'd had it noted that you didn't, and if you do it actually simplifies how we hand off this filing going forward.
+- Still open from 07-22/24 (unchanged): the 17 feed adds, the stale-draft pulls, the 2× price fixes, and the P09-APUGOLMHE12 WooCommerce typo — what's actioned?
+
+---
+
+---
+
 ### 2026-07-26 (later) — Catalog tool ran; catalogs are filed; the 12 naming calls are in your inbox
 
 UPDATE (supersedes this morning's "coming your way")
