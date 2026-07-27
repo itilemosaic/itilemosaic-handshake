@@ -1,3 +1,19 @@
+### 2026-07-27 (later) — Filing's fully mapped out; a detailed manifest + a folder-name check are coming to your email
+
+Worked / found
+- Now that we can see exactly where every catalog landed, the filing is fully accounted for: 66 new collection folders, 81 catalogs filed, 41 already on file, and the 12 held for your naming calls. Everything sits in each collection's "Vendor Assets" folder — additive only, nothing overwritten.
+- I put together a full item-by-item manifest — every folder and the catalog filed inside it. Cesar has it to send you by email, with a text-file copy attached.
+
+Next on my end
+- Add the nine names (then Raku + Lute once final) to the master name map so the next intake auto-files them.
+
+Needs from your side (KD)
+- Folder-name check (details in the email): a handful of folders came out with names that don't match the "<Brand> Porcelain Tile" / "Ceramic Tile" pattern. The files inside are filed correctly — it's only the folder names, so that a future re-run of the tool doesn't create a duplicate folder. The one to check first is Granosa: the tool made "Granosa Porcelain Tile," but you'd filled a "Granosa Porcelain" folder by hand — if both exist, let's pick one keeper.
+- One new item: a file named "tech_sheets.pdf" was held — it has no brand or vendor in the filename, so I couldn't place it. Can you tell me what collection it belongs to?
+- Still open (unchanged): the Raku (Argenta) name; Caementum → Lute vs the separate Refin Cortina/Chaletwood rename; the quick V:\iTileMosaic write-access confirm; and the 07-22/24 feed items (17 feed adds, the stale-draft pulls, the 2× price fixes, and the P09-APUGOLMHE12 WooCommerce typo).
+
+---
+
 ### 2026-07-27 — Got your 12 answers — 9 set, Kirova skipped, 2 to finish
 
 Worked / found
