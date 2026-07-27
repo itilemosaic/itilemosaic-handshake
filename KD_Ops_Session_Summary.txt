@@ -1,3 +1,48 @@
+# KD_Ops_Session_Summary — 2026-07-27
+
+### 2026-07-27 — Feed audit complete; 12 price fixes closed; feed removals resolved; MC Limited flag root-caused
+
+---
+
+## What I worked on / found
+
+**ORCH_Share 07-26 folded in.** Replied to Cesar's 12 catalog naming questions — missing folders created, misnamed folders corrected, Sage-unavailable items flagged back. Cortina & Caementum series determination blocked on Cesar's call (same series or separate?).
+
+**Feed price fixes (12 SKUs) — fully closed.** Corrected in feed: P48-MONBLANA-A, P48-COQCHAM, W12-FOSBON40-A, P24-PEBTAU48, P24-PEBWHI48. Confirmed correct, no action: P24-TUSBIA48, P24-TUSAVO48, P48-CAPSANPOL, P24-LUDOGHM48, W14-LONEWH40, W14-LOGENGR40, P10-OUDEBO60. Full feed vs. website price cross-check completed — all 621 products confirmed aligned to the cent.
+
+**Feed removals — fully closed.** P12-KALARC71, P12-KALHAY71, P12-KALROB71, W14-LOGENRW40, SOF-CRLMM2X4 published back to live (were incorrectly sitting in Draft, not discontinued). W14-LOGENWP40 removed from iTileMosaic feed (discontinued, under $800 threshold); backup saved to V drive. P24-PEBSAN48 removed (confirmed discontinued). P10-OUDH07-60 removed per Cesar's USA Tile removal list — prior "do NOT remove" hold superseded by Cesar's confirmation.
+
+**MC Limited flag — root-caused.** 142 of 621 iTileMosaic products showing "Limited — Missing local inventory data." Root cause: Free local listings + Local inventory ads add-ons enabled on iTileMosaic MC account despite no physical stores. Additional finding: approved products have a duplicate "id" custom label in Raw data source attributes (iTileMosaic custom labels); Limited products do not. Primary feed sheet confirmed has no custom label columns — source is a secondary registered data source. Pattern suggests MC's local inventory matching sequence requires that "id" label for full approval. Fix routes to Cesar: disable add-ons + identify/apply the "id" label source consistently. JSON-LD structured data on product pages also reviewed — `offers.price` setup confirmed not implemented in the way originally thought; routes to Cesar to confirm current state before touching feed prices further.
+
+**Other closures.** P09-APUGOLMHE12 WC price fix confirmed closed — correct on landing page, root cause was mosaic sheet input in WP editor. P63-BABARTP weight confirmed and updated in iTileMosaic feed. Bon Ton Porcelain feed rows closed — Sage confirms no additional SKUs beyond 4 live on both sites. Custom labels space fix (4 SKUs) closed as non-issue — custom_label_1 column does not exist in primary feed. Tab 2b re-export moved to Blocked — tab not locatable in MC A/B Testing sheet. 57 USA Tile closeout products: status corrected to Draft (not Private as logged 07-24); end-of-week deletion pending MC consistency.
+
+**Feed count: 621** (up from 608 at Day 1; reflects all additions + removals since 07-20).
+
+---
+
+## What's next on my end
+
+- **57 USA Tile Draft products — final deletion** — end of week once MC confirms feed consistency. (Effort: low)
+- **New SKUs with images — push live on iTileMosaic** — no confirmed SKU list yet. (Effort: medium)
+- **Raku sync sheet setup** — 6 SKUs, holding on publish until inventory arrives. (Effort: medium)
+- **WC collection-tag gap** — low urgency; Cesar can send the full missing list when ready. (Effort: low)
+- **21 not-approved MC products** — pending Cesar's response from 07-24 email. (Effort: low — once he replies)
+- **MC A/B title test** — Day 8, passive monitoring. Closes Aug 17.
+
+---
+
+## Needs from Cesar
+
+- **W14-LOGENWP40 — drop from title test records.** Removed from iTileMosaic feed today (discontinued, under $800). Same treatment as W14-LOPCAM40 and P24-CONGRC-48 on 07-10. Please confirm not in CONTROL or VARIANT and update the test records.
+- **MC — disable Free local listings + Local inventory ads add-ons on iTileMosaic account.** No physical stores; these add-ons are generating "Limited" flags on 142 of 621 products. Fix is account-level settings only — no feed changes needed from my side.
+- **MC — duplicate "id" custom label in Raw data source attributes.** Present on approved products, absent on 142 Limited products. Not in the primary feed sheet — identify which secondary source is generating it and whether it needs to be applied to all 621 before you remove the add-ons. This may be the actual matching key MC is looking for.
+- **Cortina & Caementum — same series or separate?** Needed to finalize catalog filing from today's naming pass.
+- **Tab 2b re-export — clarify where it lives.** "Tab 2b" not found by name in the MC A/B Testing sheet. What is it and is there an action on my side?
+- **21 not-approved MC products** — awaiting your call from 07-24 email. Keep in feed or remove?
+- All prior standing blocked items carry.
+
+---
+
 ### 2026-07-24 — MCTitleGenerator v2.1; USA Tile closeout feed 66 SKUs added; 150 SKUs reviewed; workflow charts for Tabatha
 
 **Worked / found**
