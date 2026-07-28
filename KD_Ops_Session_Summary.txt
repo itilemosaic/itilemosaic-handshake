@@ -1,4 +1,41 @@
-# KD_Ops_Session_Summary — 2026-07-27
+# KD_Ops_Session_Summary — 2026-07-28
+
+### 2026-07-28 — 57 USA Tile closeouts trashed + 410s applied; 7 new SKUs pushed to Draft on both sites
+
+---
+
+## What I worked on / found
+
+**57 USA Tile closeout products — fully closed.** MC USA Tile confirmed 367 active products (weekend removals processed). 3 disapprovals noted for separate crawler "can't find page" issue — URLs confirmed live; re-crawl requested. Trashed all 57 in WooCommerce and applied 410 redirects in Yoast. Tested on first SKU (410 confirmed via httpstatus.io) before running all 57. Task closed.
+
+**7 new SKUs pushed to Draft on both sites.** Ready SKUs: W24-RASEIVM48, W24-RASETEM48, W24-RASEWHM48, W24-RAZEIVM48, W24-RAZETEM48, W24-RAZEWHM48 (all 6 Raku) + P32-MOTRIOM63. All pushed to Draft on both iTileMosaic and USA Tile. Go live tomorrow, then MCTitleGenerator run for all 7 in one pass. P63-CALBIAAS and P63-CALBIAM still blocked — no images or product info.
+
+**ORCH_Share 07-27 entries folded.** Two new entries (07-27 and 07-27 later): folder-name check email (Granosa folder naming conflict) and tech_sheets.pdf identification — Katherine confirmed both were handled on 07-27. No new open items from those entries.
+
+**Confirmed: new SKU title generation does not affect the A/B title test.** New SKUs entering the feed now were never assigned to CONTROL or VARIANT — running MCTitleGenerator on them is clean.
+
+---
+
+## What's next on my end
+
+- Push 7 new SKUs live tomorrow + run MCTitleGenerator on both tabs (iTM GOOGLE FEED + UST GOOGLE FEED)
+- Raku ProductSync sheet entry (publish holds until inventory arrives)
+- Monitor 3 MC USA Tile disapprovals — likely self-resolving after re-crawl
+- Watch 21 not-approved MC products pending Cesar's response
+
+---
+
+## Needs from Cesar
+
+- **MC Limited flag fix:** disable Free local listings + Local inventory ads add-ons on iTileMosaic MC account (142 of 621 products showing "Limited — Missing local inventory data"). Investigate the duplicate "id" custom label in Raw data source attributes before touching add-on settings. *(Carries from 07-27)*
+- **W14-LOGENWP40:** confirm not in CONTROL or VARIANT and drop from title test records. *(Carries from 07-27)*
+- **Cortina & Caementum:** same series or separate? *(Carries from 07-27)*
+- **Tab 2b re-export:** clarify what it is and where it lives in the MC A/B Testing sheet. *(Carries)*
+- **21 not-approved MC products:** keep in feed or remove? *(Email sent 07-24, carries)*
+
+
+---
+
 
 ### 2026-07-27 — Feed audit complete; 12 price fixes closed; feed removals resolved; MC Limited flag root-caused
 
