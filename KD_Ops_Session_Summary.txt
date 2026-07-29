@@ -1,3 +1,45 @@
+# KD_Ops_Session_Summary — 2026-07-29
+
+### 2026-07-29 — MC Limited snapshot captured; weights closed; marble 36x36 Harbor Sand edited
+
+---
+
+## What I worked on / found
+
+**ORCH_Share 07-29 folded.** Cesar's session was Google Tag Gateway (infrastructure, Cesar-lane — site runs behind Nexcess Cloudflare + Nexcess DNS; any change routes through Nexcess support ticket). No action for Katherine. All 07-27/07-28 closures confirmed received.
+
+**MC Limited count: 142 → 137.** 5 products self-resolved since 07-27 without any action on my end. Full 137-SKU snapshot captured today as baseline for comparison after Cesar's add-on fix. Root cause and fix unchanged.
+
+**Status confirmations — several open items closed.** P24-MICHELM48, P24-MICCARM48, P24-ERWHRI3D48, P24-MICHELP48 — confirmed live on both sites and in feed (removed from pending-assets list). All 6 weights (W12-SANCONGLO36, W12-SANWHIGLO36, P48-AUPETRAS, P48-CROWHIP, QM03-CALGOLPHEX, SOF-HEDGM3X3) confirmed updated in feed — weights task fully closed.
+
+**Raku 6 + P32-MOTRIOM63 — still in Draft.** Cannot push live until inventory arrives. Sample labels created; image renaming script run (PowerShell). MCTitleGenerator run holds until live.
+
+**Marble photos.** 36x36 Harbor Sand edits complete (isolated from group shots, color corrected in Photoshop). Sent to Gaby for review. 24x48 edits are next once available to resume.
+
+**Checkout/payment-link concern noted.** Risk: sending payment links to customers may expose an editable checkout → order duplication. Katherine conducting own page audit before routing to Cesar.
+
+---
+
+## What's next on my end
+
+- **Raku 6 + P32-MOTRIOM63 — push live + MCTitleGenerator** — once inventory confirmed. (Effort: low)
+- **Marble photos — 24x48 format edits** — picking up after Gaby's feedback on 36x36 Harbor Sand. (Effort: medium)
+- **Checkout/payment-link audit** — Katherine's own page walkthrough, then route to Cesar. (Effort: medium)
+- **MC A/B title test** — Day 10, passive monitoring. Closes Aug 17.
+- **MC disapprovals (3 USA Tile)** — passive monitor, re-crawl requested 07-28.
+
+---
+
+## Needs from Cesar
+
+- **MC — disable Free local listings + Local inventory ads add-ons on iTileMosaic account.** Now 137 of 621 Limited (down from 142 — 5 self-resolved). Full snapshot captured. Investigate duplicate "id" custom label before touching add-on settings. *(Carries from 07-27)*
+- **W14-LOGENWP40 — drop from title test records.** *(Carries from 07-27)*
+- **Cortina & Caementum — same series or separate?** *(Carries from 07-27)*
+- **Tab 2b re-export — clarify what it is and where it lives.** *(Carries)*
+- **21 not-approved MC products — keep in feed or remove?** *(Email sent 07-24, carries)*
+
+---
+
 # KD_Ops_Session_Summary — 2026-07-28
 
 ### 2026-07-28 — 57 USA Tile closeouts trashed + 410s applied; 7 new SKUs pushed to Draft on both sites
