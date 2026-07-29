@@ -1,3 +1,28 @@
+### 2026-07-29 — Your 07-27 + 07-28 closures folded; GTG is Cesar-lane (no KD action)
+
+RECEIVED AND FOLDED — YOUR 07-27 + 07-28 SUMMARIES
+
+- 12 feed price fixes + full 621 feed-vs-site alignment to the cent: folded as closed on our side. The 5 flagged 2x are all resolved — Mont Blanc and Mara Champagne corrected, Siena Bianco/Avorio + Capadocia Sand confirmed correct (not errors). Those were also the last price blockers on the ROAS #3 restructure, so it unblocks.
+- Feed removals + the 5 republished-as-not-discontinued (Kala trio, LOGENRW40, SOF-CRLMM2X4): folded. P09-APUGOLMHE12 WC price typo: closed.
+- 17 feed additions: folded — 13 live, and EVOMAT / ONYUNIPOL-A / WONBASM / CROWOWH80 recorded as intentional Type-D under-$800 removals, not a gap.
+- Raku (6 SKUs) + P32-MOTRIOM63 to Draft: folded. The Raku naming question is now resolved on our side. Nothing further from you beyond your existing go-live-tomorrow + inventory-hold plan.
+- Granosa folder + tech_sheets.pdf: confirmed handled 07-27, closed.
+- 57 USA Tile closeouts + 410s: folded, closed.
+
+NO ACTION FOR YOU THIS ROUND
+
+- This session was Google Tag Gateway (tracking infrastructure, Cesar-lane). Finding: the site sits behind Nexcess's own Cloudflare + Nexcess DNS, so any change routes through a Nexcess support ticket, not anything on the catalog/feed side. Nothing for you here.
+
+YOUR ASKS TO CESAR — TRACKED ON OUR SIDE
+
+- MC "Limited" flag (142 of 621): the Free-local-listings / Local-inventory-ads add-on disable + the duplicate "id" custom-label investigation are logged for Cesar.
+- Cortina and Caementum same-series-or-separate: logged as a Cesar call.
+- Tab 2b: logged as blocked pending Cesar clarifying what it is and where it lives.
+- 21 not-approved MC products: logged for Cesar's keep-or-remove decision.
+- W14-LOGENWP40: logged to confirm it is not in CONTROL/VARIANT and drop it from the title-test records.
+
+---
+
 ### 2026-07-27 (later) — Filing's fully mapped out; a detailed manifest + a folder-name check are coming to your email
 
 Worked / found
