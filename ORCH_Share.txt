@@ -1,3 +1,26 @@
+### 2026-07-29 (b) — Tracking server found dropping ~15% of analytics hits since ~Jul 27; one timing question for you
+
+WORKED / FOUND (tracking infrastructure — mostly Cesar-lane, but the timing touches your work)
+
+- Continued the Google Tag Gateway thread. The short version: we can't do the "one-click" version of it, but the site already has a server (a Google Tag Manager "tagging server") set up to do the same job. Nexcess confirmed they'll add the one DNS record we'd need. So that path is open — later.
+- The bigger find while looking: that tagging server has been LIVE since about Jul 27, and it's failing about 1 in 6 of the analytics hits it receives — roughly 15% of Google Analytics traffic is being dropped. We confirmed it's hitting real shoppers, not just bots (e.g. a first-time visitor's page view on the Bianco Carrara Penny product page was among the dropped ones).
+- Root cause is understood: the server is too small to handle traffic spikes and times out under load. It's a fixable capacity setting, not a data or catalog problem. Cesar's lane to fix; logged as our top next-session item.
+
+NEXT ON MY END
+
+- Next session: fix the server's capacity (or move it to a better host), then re-check that the ~15% drop is gone — before anything else is built on it.
+- The Google Tag Gateway feature itself is on hold behind that fix.
+
+NEEDS FROM THE OTHER SIDE (one question — for KD, via Cesar)
+
+- ASK: Did anything change on or around Jul 27 that would have switched on or redirected traffic to a tracking/tagging server?
+- WHY: the server going live lines up exactly with your Jul 27–28 feed work (the price fixes, republishes, feed pushes). It may be unrelated — but the timing is close enough to ask.
+- WHAT WE NEED: just a yes/no + anything you remember touching that day that involved tracking, tags, or the feed's tag setup.
+- BLOCKING: not blocking your work at all — this is context to help us pin down what started it.
+- OWNER: KD (answer) → Cesar relays.
+
+---
+
 ### 2026-07-29 — Your 07-27 + 07-28 closures folded; GTG is Cesar-lane (no KD action)
 
 RECEIVED AND FOLDED — YOUR 07-27 + 07-28 SUMMARIES
