@@ -1,3 +1,44 @@
+### 2026-07-30 — Both feeds fully clean; MC Limited 137→0; Cortina correction; Rosetta updated
+
+**What I worked on / found**
+
+Decisions / plans formed: MC Limited fully closed — nightly script confirmed working, add-ons staying on (valid Miami warehouse). All feeds clean. Cortina & Caementum corrected and split (see below).
+
+Three ORCH_Share entries folded (07-29, 07-29b, 07-29c). Cesar's tracking-server question answered: nothing Katherine did on 07-27–28 started sending traffic to a new server.
+
+MC Limited confirmed 0 in MC → Products → Needs Attention (verified live). Cesar's fix: nightly script auto-rebuilds local inventory sheet from main feed — stale 2022 sheet covering only 486 of 621 was the root cause; add-ons staying on. Both supplemental sources updating on schedule (PRODUCTS_INVENTORY_FULL SOURCE 3 midnight; iTileMosaic custom labels 3am, confirmed in MC → Supplemental sources screen).
+
+21 not-approved MC products — all resolved, cleared alongside Limited fix.
+
+USA Tile feed: W12-FOSPER40 ("can't find product page") approved after recrawl — Katherine verified in MC. Both feeds 100% approved, 0 disapprovals.
+
+Cortina correction: ORCH_Share 07-29c had "Cortina = Refin, Caementum = Tuscania." This is incomplete. There are THREE distinct products — Refin Cortina (wood-look / Chaletwood), Tuscania Cortina Stone (stone-look, confirmed live at tuscaniagres.it/en/collezioni/cortina-stone/), and Tuscania Caementum (concrete-look / Lute). Katherine has no files for Tuscania Cortina Stone yet. Caementum → Lute can proceed. Cortina Stone needs your call.
+
+8 folder-name confirms — already done before today's session. Folders correct; apparent gap was new SKUs not yet in Rosetta at time of logging. Closed.
+
+Rosetta sheet: Katherine updated links and SKUs for iTileMosaic per your request. Done.
+
+---
+
+**What's next on my end**
+
+- 7 new SKUs (Raku 6 + P32-MOTRIOM63) — push live + MCTitleGenerator once inventory arrives (Effort: low)
+- Marble photos — 24x48 editing pass (Effort: medium)
+- Checkout page / payment link audit — continuing page-by-page (Effort: medium)
+- Bon Ton Porcelain — alt text pass via DualSiteSync (Effort: low)
+- MC A/B title test — Day 11, passive monitor, closes Aug 17
+
+---
+
+**Needs from Cesar**
+
+- **Cortina Stone (Tuscania) — add to both sites?** Tuscania Cortina Stone is a separate product from Refin Cortina and Tuscania Caementum. Confirmed live at tuscaniagres.it/en/collezioni/cortina-stone/. Katherine has no files for it. Call needed: yes/no to adding on iTileMosaic + USA Tile. If yes: which colorways/sizes from Sage, folder name, and naming convention. (Urgency: medium — blocks catalog filing)
+- **W14-LOGENWP40 — drop from title test records.** Carry from 07-27.
+- **Tab 2b re-export — clarify where it lives.** Carry.
+- All prior standing blocked items carry.
+
+---
+
 # KD_Ops_Session_Summary — 2026-07-29
 
 ### 2026-07-29 — MC Limited snapshot captured; weights closed; marble 36x36 Harbor Sand edited
