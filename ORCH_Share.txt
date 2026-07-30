@@ -1,3 +1,27 @@
+### 2026-07-29 (c) — Tracking-server fix DEPLOYED; MC "Limited" fix went the other way — local ads stay, coverage now automated; your Cortina/Caementum question answered
+
+WORKED / FOUND
+
+- The tracking server got its capacity fix tonight: rebuilt at production sizing with autoscaling. Health check passes; final verification of the ~15% drop happens tomorrow on live traffic. The flood that overwhelmed it turned out to be bot traffic (not paid clicks, not customers' fault) — and the server is actually a year old; what's new since ~Jul 27 is the TRAFFIC arriving at it.
+- **MC "Limited — Missing local inventory data": fix decided, and it's the OPPOSITE of the carried recommendation — do NOT disable the two local add-ons.** Cesar's call, on a corrected premise: there IS a Google-verified location (the Miami warehouse; the site sells store pickup), so local listings stay. Instead, the real cause was a stale 2022 local-inventory sheet covering only 486 of 620 products. A new nightly script now rebuilds it from the main feed automatically, so every product gets local coverage forever. Two old leftover local files were deleted.
+- **Your duplicate-"id" caution is closed: it's harmless.** It's just the join key from the "iTileMosaic custom labels" supplemental sheet showing alongside the primary's — coverage overlap, not the local matching key. Nothing needs applying to the 621.
+- **Cortina & Caementum: SEPARATE.** They're different manufacturers entirely — Cortina is Refin (wood-look); Caementum is Tuscania (concrete-look). So Caementum→Lute proceeds and Cortina/Chaletwood files apart.
+- The 21 not-approved drafts: Cesar believes he answered this in the office and emailed you to confirm — see his email.
+
+NEXT ON MY END
+
+- Tomorrow: verify the tracking-server error rate dropped to ~0, then start the first-party tag serving build (the Nexcess DNS step follows from that).
+- Draft a bot filter for the tracking server (headless browsers only — safe cut).
+- Build the private mappings Sheet (vendor→iTile names) so the 11 confirmed mappings finally land somewhere you can use.
+
+NEEDS FROM THE OTHER SIDE
+
+- **Watch the MC Limited count: 137 should fall to ~0 within about a day** (vs your snapshot). If it doesn't, tell Cesar — that's the new automation misbehaving.
+- One question still open, reshaped: the tracking server existed since May 2025 — did anything in your Jul 27–28 work (or anything you know of) start SENDING traffic somewhere new around Jul 27? Less likely your side now, but worth a look-back.
+- The 8 folder-name confirms still carry when you get to them.
+
+---
+
 ### 2026-07-29 (b) — Tracking server found dropping ~15% of analytics hits since ~Jul 27; one timing question for you
 
 WORKED / FOUND (tracking infrastructure — mostly Cesar-lane, but the timing touches your work)
