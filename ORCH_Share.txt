@@ -1,3 +1,25 @@
+### 2026-07-31 — 41 feed titles changed (backup tab exists); 4 products need feed rows; Rosetta iTile tab missing ~35 live products; V: Rosetta copies retired
+
+**Worked / found**
+- 41 products in the primary feed sheet got NEW TITLES today (large-format 48x48 + 36x72 lines; new search-first format, e.g. "48x48 Limestone Look Porcelain Tile Ivory Matte Rectified …"). Old titles preserved in feed-sheet tab **Phase1_TitleBackup_20260731**. The 63 large-format SKUs in the running title test were NOT touched — frozen until the test closes ~Aug 17.
+- The title test's baseline snapshot had been broken (all zeros) since 7/16 — repaired today; the Aug 17 readout will work. No action for you; FYI since you monitor the test.
+- Rosetta housekeeping: the three copies on V:\iTileMosaic\Products are retired/deleted (per Cesar) — the live workbook in OneDrive is the only working copy now. Tip that helps the slowness: File → Open in Desktop App edits the same cloud file at local speed (no more download-copies, no divergence).
+- Merchant Center "found by Google" flagged 5 site products missing from the feed; 4 are real (one is a sample — ignored).
+- New MC supplemental source "ROAS3 Phase 1 ad-group labels" (custom_label_4) — powers new ad groups; harmless to your workflows; please don't repurpose custom_label_4.
+- Local-inventory nightly sync ran clean unattended (0% errors, 2:24 AM) — your Limited-count verify vs the 137 snapshot still welcome.
+
+**Next on my end**
+- Ad-group negatives build; carve-out step in Ads in ~2 days; watching the 41 retitled products re-learn.
+- At test close (~Aug 17): the remaining 63 titles + the catalog-audit title fixes.
+
+**Needs from you**
+- **Description audit status:** did the fixes for the ~201 floor SKUs sharing identical feed descriptions (my 07-24 audit tab) ever get applied? One-line status is enough.
+- **4 feed rows to add** — file `FoundByGoogle_4_feed_rows_for_KD.csv` (Cesar has it): Raro Onyx Unique 48x48, Marvel Base 30x30, Avenue White 10x80, Eleva Matte 24x24. Please add via the feed sheet (not MC's auto-add) so titles/labels stay controlled. Raro Onyx then gets its new title from us.
+- **Rosetta iTile tab:** ~35 live products are missing from it (all of Pressi, Nixe, Ronda, the Cosmic 36x72 line, Moon Shine, Solaris, Pietrica, and more — exact list available). When convenient, add rows so the tab matches the site.
+- Carried: 8 folder-name confirms; reply on the 21 not-approved drafts; Limited-count verify.
+
+---
+
 ### 2026-07-29 (c) — Tracking-server fix DEPLOYED; MC "Limited" fix went the other way — local ads stay, coverage now automated; your Cortina/Caementum question answered
 
 WORKED / FOUND
