@@ -1,3 +1,37 @@
+### 2026-07-31 — Marble 24x48 French Vanilla started; CRM scope expanded
+
+---
+
+## What I worked on / found
+
+Marble photos: began 24x48 French Vanilla Group 1 — color correction and cutouts in Photoshop. These are Katherine's own photographs for quality review and marketing purposes, not vendor images going through the automation pipeline. 36x36 Harbor Sand closed — Gaby's review was implicit sign-off, no changes needed. Customer service tasks ran in parallel throughout.
+
+CRM scope expanded: build proceeds for multi-rep coverage across iTileMosaic and USA Tile (any rep affiliated with lead development on either site), with Sage sync designed as a clearly marked future hook. Katherine builds; Cesar reviews for integration fit against his Sage architecture when ready. Existing BLOCKED rows (hosting/DB approval, attribution wiring) are the only blockers on her end.
+
+Decisions / plans formed this session. CRM is multi-rep from the start; Sage sync is a future connection point, not deferred entirely. Working principle confirmed: Katherine takes initiative using knowledge and common sense; Cesar's input is for integration, architectural decisions, and genuine gates — not a permission step before each move.
+
+Order gap discussion: primary driver confirmed as ad spend reduction (-36% spend / -36% orders, per June analysis). Compound drag factors documented — page speed, alt text at 3%, Pinterest dark until June, param URL crawl waste, room visualizer absent, unit pricing missing from ~97% of feed, thin organic content on category pages.
+
+---
+
+## What's next on my end
+
+- 24x48 marble photos — continue Group 1 (French Vanilla), then remaining groups. (Effort: medium)
+- Checkout/payment-link audit — own page walkthrough, then route to Cesar. (Effort: medium)
+- 7 new SKUs — live push + MCTitleGenerator — once inventory arrives. (Effort: low)
+- MC title test — passive monitor, Day 12, closes Aug 17.
+
+---
+
+## Needs from Cesar
+
+- Cortina Stone (Tuscania) — add to both sites? If yes: scope (colorways/sizes from Sage), folder, naming. (Carries from 07-30)
+- W14-LOGENWP40 — drop from title test records. (Carries from 07-27)
+- CRM — hosting + custom DB table + Sales Rep role approval. Build is ready to proceed once this clears.
+- All other prior BLOCKED rows carry.
+
+---
+
 ### 2026-07-30 — Both feeds fully clean; MC Limited 137→0; Cortina correction; Rosetta updated
 
 **What I worked on / found**
