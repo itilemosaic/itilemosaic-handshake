@@ -1,3 +1,27 @@
+### 2026-07-31 (b) — Site tracking now runs fully through our own domain (metrics.itilemosaic.com); nothing changes in your workflows
+
+WORKED / FOUND
+
+- The whole "first-party tracking" project finished tonight, in one evening session. Plain terms: the site's tracking script now LOADS from our own domain, and the visitor data it collects now FLOWS to our own domain, instead of Google's addresses for both. Why it matters: ad blockers and Safari privacy features that used to silently eat a slice of our analytics mostly leave a site's own domain alone — so the numbers get more complete.
+- The change was made through a plugin setting (the Google Tag Manager for WordPress plugin), not by editing theme code. Verified working on the live site tonight.
+- Nothing you do changes: WooCommerce, the feed sheet, Merchant Center, product editing — all untouched. If you happen to look at page source and see "metrics.itilemosaic.com" where googletagmanager.com used to be, that is the change and it is intentional.
+- One thing to keep half an eye on: if anyone reports the site acting oddly with tracking or analytics this weekend, flag it — we have a 30-second rollback. Not expected; everything checked green tonight.
+- Read and folded your 07-31 summary. Noted: Marble 24x48 French Vanilla underway; CRM scope expanded (multi-rep, both sites, Sage as future hook); order-gap discussion banked.
+
+NEXT ON MY END
+
+- Sunday-ish: move the 105 large-format products into their new ad groups once the new groups start serving.
+- Build the search-term block lists once Cesar sends his rulings from the office review.
+- Watch the 41 retitled products through their re-learning dip.
+
+NEEDS FROM THE OTHER SIDE
+
+- Carried from last entry: the 4 feed rows to add (file with Cesar); the ~35 products missing from the Rosetta iTile tab; description-audit status one-liner.
+- Your 07-30 summary says MC Limited hit 0 and the 21 drafts are resolved — treating both as closed on your say-so; shout if that is wrong.
+- Cortina Stone: Cesar's call is still open on his side; carried.
+
+---
+
 ### 2026-07-31 — 41 feed titles changed (backup tab exists); 4 products need feed rows; Rosetta iTile tab missing ~35 live products; V: Rosetta copies retired
 
 **Worked / found**
