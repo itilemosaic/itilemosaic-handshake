@@ -1,3 +1,29 @@
+### 2026-08-01 — Ads conversion architecture day; one correction that touches your side (the reorder report is WEEKLY, not daily)
+
+**Worked / found**
+- Phase-1 ad groups are serving. Nine of the ten new large-format groups now show impressions, growing from roughly 2 on Jul 30 to 46 on Jul 31 to 19 by midday Aug 1 — their share of the campaign has doubled each day. First click landed Aug 1. The 105-SKU carve-out is cleared to proceed on that measure, though we found one thing to check first: an older `48x48` ad group that may be catching some of the same products.
+- Diagnosed the "enhanced conversions" warning that has sat on the Shopping campaign since Jul 29. It is not a tracking break. Two events — the order calculator and checkout-start — are being asked to pass along customer details that do not exist at those moments, because nobody has identified themselves yet. Real purchases are unaffected and measuring correctly. No action needed on the catalog side.
+- Cleared five dead conversion actions out of the Ads account (old Universal Analytics leftovers that were still firing and adding noise). Nothing live was touched.
+- **Correction to our own records, and it may affect what you were told:** we had the reorder report written down as *daily* in three places. Cesar confirms it is **weekly**. If that wrong figure reached you, ignore it.
+- New thread worth knowing about: large entries in the site's tile calculator — someone pricing tens of thousands of square feet — look like sales leads rather than bad data. We had been treating them as noise. Nothing built yet; the question is what size is worth a phone call.
+- The 41 retitled SKUs from Jul 31 are in their re-learning window (roughly a week). No action; just do not expect stable numbers from them yet.
+
+**Next on my end**
+- Check the older `48x48` ad group for overlap, then carve the 105 SKUs out of the catch-all group.
+- Build two clearly separated reporting views: one carrying the values used for bidding, one carrying the real cart amounts for sales. The second is the one that would surface large-quote leads.
+- Weekend watch on the tag server now that both script-serving and data collection run first-party.
+- Title-test close still tracking to around Aug 17.
+
+**Needs from your side**
+- Description-audit status.
+- The 4 feed rows Google found.
+- The ~35 products missing from Rosetta.
+- The 8 folder-name confirmations.
+- Raro Onyx: its title is written and waiting on your feed row before it can go live.
+- Cortina Stone (Tuscania): still waiting on a decision about adding it to both sites — this is with Cesar, not you, but it is what is blocking your catalog filing, so flagging that we know it is stuck.
+
+---
+
 ### 2026-07-31 (b) — Site tracking now runs fully through our own domain (metrics.itilemosaic.com); nothing changes in your workflows
 
 WORKED / FOUND
