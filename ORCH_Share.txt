@@ -1,3 +1,49 @@
+### 2026-08-02 — AcctOps mistake report (session start skipped; wrong table drove a near-miss external instruction) + Sage Application Server outage
+
+**MISTAKE REPORT — this is the main content of this entry.**
+
+**Root cause: SESSION START was never run.** The role layer, Environment Manifest (619 lines) and Reference (310 lines) were all reachable this session and none were read. The agent worked from live schema discovery instead. Everything below follows from that.
+
+Note also: the Instructions box warns that this repo connector returns "repo not allowed" for `usatile-accounting-ops`. **It does not** — the read worked first try when finally attempted at the end of the session. A stale warning was treated as fact without a single test, which is the same error class as the rest of this entry.
+
+**1. Wrong allocation table — the expensive one.** Queried `SO_SalesOrderTierDistribution`, found it empty company-wide, and concluded that no sales order at USA Tile has ever carried a lot allocation and that tone is assigned at pick time. That is false. USA Tile runs DSD Multi-Bin; allocations live in `SO404_OrderTierDist` (700 rows). `USATile_AcctOps_Reference.md` line 56 documents developer code 404 explicitly. Cesar caught it — "you're looking at the wrong folder, should be multi-bin." **An empty table is a reason to question the table, not the process.**
+
+**2. Inverted arithmetic, asserted as a finding.** Reported lot TG01-44 on item P10-IKOALMM60 as "oversold by ~450 SF." On hand 3,435.78, committed 2,987.75 — that is 448.03 SF *remaining*. Both numbers appeared in the same message as the wrong conclusion drawn from them.
+
+**3. The two above reached a deliverable.** A draft email to the CS team was produced instructing them to move order 1795407 (Frances Jack, 646 SF) off TG01-44 onto lot MG1-44, to fix a shortage that did not exist and to correct an allocation that was already right. Both orders were correctly allocated to one tone out of one bin (E23) with room to spare. Had it sent, CS would have split a correct single-tone allocation across two tones and two pick locations on Cesar's authority. **Catch latency roughly six turns, and the cost would have been external.** It was stopped only because Cesar named the right table.
+
+**4. Spec written before reading the documentation it duplicates.** `tone-allocation-routine-spec.md` was drafted for a daily tone-allocation report while the manifest sat unread, rediscovering documented facts and guessing at an "ideal lot" ranking. It also declared deposit date a blocking gap without first checking `SO_SalesOrderDetail`, which carries `D404_QtyAllocated`, `LotSerialFullyDistributed` and `D519_LotSerialFullyDistributed` — fields that change the design. Cesar caught that too.
+
+**5. Misread an auth result and sent Cesar back into a lockout risk.** `net use \\USA-SAGE\IPC$` returned success and was reported as proof his credentials were valid. Windows permits one credential set per server and had merely bound to an existing session; it validated nothing. Self-corrected the following turn, but only after he had spent another attempt. He reached four failed authentications against a likely five-attempt lockout policy.
+
+**What held, for calibration.** The negative-availability gate held: two failed `list_tables_rl` calls were in hand before any timeout was named, and `readlayer_health` was re-tested in between. The read-only boundary held under three consecutive direct instructions to kill Sage sessions — no write was attempted and no capability was invented, though the third refusal could have moved to the practical alternative faster.
+
+**Honest read.** Five errors, but the count is not the point. Four were caught by Cesar rather than self-caught, and the two that mattered survived to a deliverable he was about to send outside the company. The pattern is not carelessness in any single query — each query was correct for the table it hit. It is that no query was ever checked against the documentation describing this environment, because the session never started properly.
+
+---
+
+**SAGE APPLICATION SERVER OUTAGE — live as of this writing, needs to clear before Monday 08-03 08:00 EDT.**
+
+- WindX clients cannot connect to USA-SAGE: "server is reachable, but not accepting requests on the TCP/IP Socket." ODBC (`SOTAMAS90MCP`) is unaffected and responded normally all session, so the box and data layer are up; it is the session layer refusing.
+- `SY_Console` frozen at 53 open tasks across 10 workstations — identical PIDs across reads several minutes apart, zero churn. Roughly 44 are orphans with no authentication since 08-01 or earlier. Possible session-pool exhaustion rather than a stopped service; unconfirmed, service state is not readable over ODBC.
+- Last successful authentications 08-02: `cr` 09:42, `Kalfaro` 10:02 EDT. Breakage occurred between 10:02 and 10:34.
+- Likely orphan source: recurring `LINE: 9220 ERROR: 86 [_winpr]` in S/O on 08-01, hitting Kalfaro, sgreene, npita, NS, rtongen, imircoli — printer faults ejecting users mid-session, several followed by immediate re-auth.
+- **Cesar has no remote path in.** AD password fails with 1326 against USA-SAGE; RDP refuses him for lack of remote-login rights (0x3/0x9); Master Console requires the WindX client that is down. Needs IT/VAR with console access, plus a password reset and RD Users membership so this is not a dead end next time.
+
+**Needs from Overlord's side / for Cesar to route**
+- IT or the Sage VAR on USA-SAGE today. Warn `cr` and `Kalfaro` before any restart — they were live this morning.
+- Mirror build owner: `readlayer.db` needs `SO404_OrderTierDist`, `IM_ItemCost`, `SO_SalesOrderHeader`, `SO_SalesOrderDetail`, `CI_Item`, and the AR invoice-history trio including `AR_InvoiceHistoryLotSerial`, before any daily tone report can run off the mirror.
+- Deposit date source is still unidentified — zero matches for "Deposit" across the Environment Manifest, and `SY_UDT_519REGISTERS` is only a register-code lookup. Deposit-date order governs allocation sequencing, so the daily report is blocked on it. May not be in Sage at all; worth asking CS how they actually track it.
+
+**Also noted, separate from the outage**
+- Lot MG1-44 on P10-IKOALMM60: 2,099.51 SF received 2024-03-04, zero allocations, no movement in two years. Aged-tone question, not an allocation error.
+- Quote hygiene: 28 open quote lines on that one item alone, 19 dating to 2024–2025, nine carrying `ShipExpireDate` 5999-12-31 so they never expire, nine more with zero quantity. Company-wide this is likely large.
+- Data quality: at least one quote (1792362) carries `OrderDate` 9884-10-20, apparently keyed from the customer number 0209884. Range-filter defensively on dates.
+
+**State export / parity — NOT RUN.** Tier-1 self-audit was not performed this session and is unverified: role-layer-vs-Core version line, Instructions-box pointer agreement, one-copy-per-living-file, `as of session:` stamp, C0 naming. Flagging the omission rather than reporting a pass. The Instructions-box pointer check is the one that matters most here, given the stale connector warning noted above.
+
+---
+
 ### 2026-08-01 — Ads conversion architecture day; one correction that touches your side (the reorder report is WEEKLY, not daily)
 
 **Worked / found**
