@@ -1,3 +1,32 @@
+### 2026-08-03 — Google Ads now sees real order amounts, not placeholders; and our record of what paid Shopping costs was wrong by about 25 times
+
+**Worked / found**
+- **Google Ads was being told fake dollar amounts for some events, and now gets the real ones.** Background: to keep Google's automatic bidding stable, three of our tracked events were set to report a fixed made-up value — a checkout start always counted as $40, an order-calculator use always $8. Good for bidding, useless for people, because a customer pricing 4,000 sq ft looked identical to one pricing a bathroom. We added parallel tracking that records the **actual** amount alongside the fixed one. Bidding still uses the stable number; humans can now see the true value. Live as of this morning and tested end to end — a $10,542.96 cart reported as exactly that.
+- **The cost of paid Shopping was badly wrong in our records.** We had roughly $300–400 written down for the six weeks from June 22. The real figure, pulled from the account, is **$8,802.90** — about $220 a day. Nothing you do changes, but if you ever saw the low figure quoted, discard it.
+- **What paid Shopping actually returned in July:** Google claims 21 purchases worth $2,862.80, against $5,377.75 spent. The store approved 61 orders worth $26,682.46 in the same month, 46 of which were $5 samples. So paid Shopping accounts for roughly a ninth of the month's approved revenue and cost about twice what it brought in. Not a conclusion yet — there is a gap between Google's count and ours that we have not explained.
+- **A caution that affects how anyone reads per-product performance in Google Ads.** Google credits an entire order to whichever product the customer *clicked*, not to what they bought. We found a $112 tile with five clicks credited with $1,378 of sales. Since three-quarters of our order volume is $5 samples, **sample listings are being credited with revenue from large orders they were never part of.** Practical upshot: judging which products are "performing" from Google's revenue column is unreliable. Use views and clicks from Google, and real money from WooCommerce.
+- **The order calculator is two different things and we had been treating it as one.** The "Order Calculator" event Google tracks comes from a standalone form, not from the calculator on product pages. The product-page one is tracked separately. Worth knowing if you ever look at those numbers.
+- **Checked and healthy:** our tracking server had a genuine error spell in late July that stopped around July 30 and has been clean since. Nothing outstanding there.
+- **Confirmed the click-fraud tool is at its ceiling.** The blocked-address list it maintains is full at Google's maximum of 500, which means it removes one address every time it adds one. Cesar is deciding whether it stays.
+- **Our own reference document was seven weeks out of date** and has been rebuilt. It had a wrong note about which Google account owns the ad accounts, which had already sent us hunting in the wrong place twice.
+
+**Next on my end**
+- Test the standalone order-calculator tracking on its own page, then either switch it on or drop it.
+- Finish the reporting views: one carrying the values bidding uses, one carrying real amounts for the sales side. The second is what would surface a large-quote lead.
+- Work out why Google's July purchase count and ours disagree.
+- Title-test close still tracking to around Aug 17, along with the product regrouping and the conversion-window change.
+
+**Needs from your side**
+- Description-audit status.
+- The 4 feed rows Google found.
+- The ~35 products missing from Rosetta.
+- The 8 folder-name confirmations.
+- Raro Onyx: title written and waiting on your feed row.
+- Cortina Stone (Tuscania): still with Cesar, not you — flagging that we know it is what blocks your catalog filing.
+- One question, no rush: **do you know which page holds the standalone order-calculator form?** It is a Gravity Forms form. If you know it offhand it saves me hunting.
+
+---
+
 ### 2026-08-02 — AcctOps mistake report (session start skipped; wrong table drove a near-miss external instruction) + Sage Application Server outage
 
 **MISTAKE REPORT — this is the main content of this entry.**
