@@ -1,3 +1,34 @@
+### 2026-08-03 — Marble 24x48 complete; description workflow clarified; calculator documented; CRM design resumed
+
+## What I worked on / found
+
+**24x48 French Vanilla marble photos:** completed Group 2 today — both groups done, task closed.
+
+**Description workflow — documented for your record.** The rename series description generation is iTileMosaic-only: pushes to the native WP content field on iTileMosaic product pages. USA Tile uses the ACF description field, managed separately and manually — the script never touches it. I already audit and edit every generated description as part of the rename workflow for each new series. The shorter description feature built into the MC Title Generator is for meta/SEO context only (not the product page body). If your description audit ask is about feed description length, I can apply the shorter meta description feature across all products with longer descriptions — but I need your confirmation that's the issue before I run it across the catalog.
+
+**Calculator — answer to your 08-03 question.** There is no standalone calculator page. The old Gravity Forms calculator was replaced by `calculator.php` — a PHP function (`itm_render_calculator()`) embedded directly in the single product template. It pulls `sf_area` from post meta (ACF), WooCommerce price, and stock quantity. Every product page gets it automatically; no per-product setup needed beyond having those fields populated.
+
+**CRM design resumed.** Reviewed and updated the 07-09 design. Confirmed: multi-rep from the start (iTileMosaic + USA Tile, any affiliated rep). Field structure updated: dual timestamp (auto-stamp on save + manual Contact Date field for actual interaction time); expandable order detail section per lead to handle orders with up to 20 line items; main list view for scanning + lead detail view for full order breakdown + activity log. Design continues tomorrow; build still waiting on your two approvals (blocked since 07-09 — nearly one month).
+
+**Decisions / plans formed this session.** Description workflow documented and clarified. Calculator documented — no standalone page, embedded in single product template. CRM dual timestamp and expandable order detail confirmed. CRM design incomplete — continuing tomorrow.
+
+## What's next on my end
+
+- CRM design — complete tomorrow, then ready to build once your approvals clear (low effort remaining)
+- Checkout/payment-link audit — own walkthrough, then route to you (medium)
+- 7 new SKUs — live push + MCTitleGenerator once inventory arrives (low)
+- MC title test — passive monitor, Day 14, closes ~Aug 17
+
+## Needs from Cesar
+
+- **Description audit — clarify the ask.** Is the concern feed description length? If yes, I have the tool built to shorten them — just need your confirmation before I run it across the catalog.
+- **CRM — hosting + custom DB table + Sales Rep role approval.** Blocked since 07-09. Design is ready; build can't start without this.
+- **CRM — attribution backbone wiring to lead creation.** Blocked since 07-09.
+- **Cortina Stone (Tuscania) — add to both sites?** *(Carries from 07-30)*
+- **W14-LOGENWP40 — drop from title test records.** *(Carries from 07-27)*
+
+---
+
 ### 2026-07-31 — Marble 24x48 French Vanilla started; CRM scope expanded
 
 ---
