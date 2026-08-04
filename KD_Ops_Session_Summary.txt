@@ -1,3 +1,53 @@
+### 2026-08-04 — CRM built and staging-tested; calculator unit label fixed; alt text pull restored
+
+---
+
+**What I worked on / found**
+
+CRM plugin fully built and deployed to staging. Hooks into `woocommerce_order_status_changed → approved-cs` at priority 20 (fires after Sample Auto Print). Three DB tables: leads, order items, activity log. Admin UI: iTileMosaic Leads list view with status filter and last-note column; lead detail with full pipeline form, append-only notes, prior-orders-from-same-customer panel, follow-up date for On Hold and Sent Follow Up; Add Lead (looks up existing WC order). Per-order model confirmed — separate leads per WC order even for repeat customers; prior orders surfaced as a connection panel in the detail view. Tabatha training closed — CRM is general-purpose, not onboarding-specific. Tested on staging by manually setting an order with SAMPLE- SKUs to approved-cs status; lead created correctly.
+
+Decisions / plans: CRM is iTileMosaic-only for now; USA Tile is a separate future install. Notes are append-only to the activity log. Trade account feature scoped as the next build: registration form (Gravity Forms) → admin approval → Trade Customer WP role → gated pricing in calculator → self-serve checkout, so trade clients can complete orders without waiting on a rep.
+
+Calculator unit label fix: identified that `/new/calculator.php` is the live file (loaded by `pdp.php` via `require_once __DIR__ . '/calculator.php'`) — not the theme's `/inc/calculator.php`; earlier uploads to `/inc/` had no effect. New ACF field `calculator_unit_label` created (independent of cart calculation fields — no risk to cart math). `pdp.php` and `/new/calculator.php` both updated. Label now reads Sheet/Piece/Box per product; blank field falls back to detection logic. Verified on staging.
+
+Alt text pull: CONFIG tab credentials in Alt Text Manager were stale (old WC Consumer Key + Secret); refreshed from Master Products sheet; pull now running. Generation step next.
+
+Closed: P48-ATTWHIAS confirmed in MC. Michelangelo + Eras collections page confirmed displaying correctly.
+
+---
+
+**What's next on my end**
+
+- Complete `calculator_unit_label` ACF field population across product types (Sheet / Piece / Box). (Effort: low)
+- Complete alt text generation run for new products (Bon Ton Porcelain 4 SKUs, Raku series, P32-MOTRIOM63) — push once generated. (Effort: low)
+- Checkout/payment-link audit — own walkthrough, then route to you. (Effort: medium)
+- Coral Reef — send vendor email once contact info received. (Effort: low)
+- 7 new SKUs — push live + MCTitleGenerator once inventory arrives. (Effort: low)
+- MC A/B title test — passive monitor, Day 15, closes ~Aug 17.
+
+---
+
+**Needs from Cesar**
+
+- **CRM — production approval.** DB table creation + Sales Rep WP role + attribution wiring confirmation. Plugin is built and staging-tested. Blocked since 07-09 — 26 days.
+  - What: approve custom DB tables on production server + Sales Rep WP role + confirm approved-cs is the correct trigger for lead creation
+  - Why: everything is built and ready; this is the only gate before production deploy
+  - Fit: server/infrastructure decision
+  - Specific ask: green light on all three or flag any concerns
+  - Urgency: high — has been sitting 26 days
+
+- **Trade account feature — two open tier questions (carry from 6/1).**
+  - (1) What's the standing discount for verified trade clients whose orders are under 1,000 SF but who order regularly?
+  - (2) If a client hits both the 1,000 SF and $5,000+ thresholds on the same order, which discount wins (15% or 10%)?
+  - Urgency: medium — needed before the trade account build can start
+
+- **Description audit — confirm the ask.** Katherine already audits and edits all generated descriptions. If the concern is feed description length, the shorter meta description feature in MC Title Generator can be applied across all long-description products. Confirm whether that's what you need before she runs it.
+
+- All prior Needs from Cesar carry.
+
+
+---
+
 ### 2026-08-03 — Marble 24x48 complete; description workflow clarified; calculator documented; CRM design resumed
 
 ## What I worked on / found
