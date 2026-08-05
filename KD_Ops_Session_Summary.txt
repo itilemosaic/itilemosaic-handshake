@@ -1,3 +1,39 @@
+### 2026-08-05 — Open items board review; several ORCH asks closed; Rosetta updates in progress
+
+## What I worked on / found
+
+**Open items board reviewed in full.** Katherine worked through pending items while handling a quote and CS tasks in parallel.
+
+**WC collection-tag gap — closed.** pa_series-name confirmed populated for all flagged SKUs (Suma Grey/White P48-OVTIMGR, P48-OVTIMWH + others). Products displaying correctly on collection pages. Architecture confirmed by Katherine: collection pages are driven by pa_series-name (WC attribute + ACF series_name field) — not by WC categories. The issue was a propagation delay, not a data gap. Closed.
+
+**Raro Onyx feed row — confirmed live.** Katherine confirmed the feed row has been in the data source for some time. ORCH ask answered — cross it off.
+
+**Calculator — no Gravity Forms page.** Confirmed: the old Gravity Forms calculator was replaced when this version of the site launched. Current calculator is `itm_render_calculator()` — a PHP function in `/new/calculator.php`, called from `pdp.php` via require_once on every product page automatically. No standalone calculator page exists.
+
+**Control group / baseline treatment clarification.** Katherine confirmed from Cesar's email that the 77 SKUs = the control group. The open item "Decide baseline treatment for June-renamed SKUs (~77 of 89)" appears to be the same list described differently. Flagged below for confirmation.
+
+**7 new Raku SKUs + P32-MOTRIOM63 — inventory expected September.** No action until then.
+
+**Rosetta sheet updates — in progress.** ~50% through the ~35 missing products. Will complete.
+
+**ProductSync USA Tile Stock Qty column — scoped, deferred to 08-06.** New column 53, reads/writes `stock_quantity` for USA Tile. Script v3.2 build tomorrow.
+
+## What's next on my end
+
+- Complete Rosetta sheet updates
+- Build ProductSync v3.2 (USA Tile Stock Qty) — 08-06
+- Monitor MC A/B title test — Day 16, closes ~Aug 17
+- Verify alt text pull completion + push
+
+## Needs from Cesar
+
+- **Baseline treatment / June-renamed SKUs:** Katherine confirmed from your email that 77 = control group. Is there a separate baseline treatment question still open, or can that item be closed?
+- **Description audit (4th carry):** Is the concern feed description length? Katherine will run the shorter meta description feature in MC Title Generator once confirmed. She already audits all generated descriptions in the rename workflow.
+- **CRM production approvals (27 days):** DB tables + Sales Rep WP role + attribution wiring. Staging-tested and ready.
+- **Trade account tier questions:** (1) Standing discount for trade clients under 1,000 SF but ordering regularly? (2) If client hits both 1,000 SF and $5,000+ on same order, which discount wins?
+
+---
+
 ### 2026-08-04 — CRM built and staging-tested; calculator unit label fixed; alt text pull restored
 
 ---
