@@ -1,3 +1,31 @@
+### 2026-08-06 — CS and order work all day; Rosetta scope clarified; ProductSync v3.2 deferred to tomorrow
+
+## What I worked on / found
+
+Full day on USA Tile customer service tasks — order processing, adding, editing, and related order work. Rosetta sheet updates continued but not complete; carrying to tomorrow.
+
+**Rosetta scope clarified.** The ~35 missing products in Rosetta appear to be a snapshot-timing issue — Cesar's agent pulled the sheet while those products were still in Draft with USA Tile names, before the rename workflow ran. Entering with current live (iTileMosaic) names. New/Draft products (Raku series, P32-MOTRIOM63) are excluded from this update — ORCH can add them when inventory arrives and they go live. Worth ORCH knowing: if the agent is maintaining Rosetta, a re-pull from the live site would keep it current and avoid this gap recurring.
+
+**MC A/B title test — Day 17.** Active, no action. Closes ~Aug 17.
+
+**Description audit — 5th carry.** Still waiting on Cesar's one-liner clarification before any action is taken.
+
+## What's next on my end
+
+- Complete Rosetta sheet updates — 08-07 (close it out)
+- Build ProductSync v3.2 (USA Tile Stock Qty column) — 08-07
+- Verify alt text pull completion + push for new products (Bon Ton Porcelain 4 SKUs, Raku 6 SKUs, P32-MOTRIOM63)
+- MC A/B title test — passive monitor, closes ~Aug 17
+
+## Needs from Cesar
+
+- **Description audit (5th ask):** One liner — is the concern feed description length? If yes, Katherine can apply the shorter meta description feature across all products with longer descriptions. No bulk action until confirmed.
+- **CRM production approvals** — still blocked since 07-09 (28 days). Three approvals needed: custom DB table creation on production, Sales Rep WP role, confirmed approved-cs trigger. Plugin is built and staging-tested.
+- **Trade account tier questions** — (1) standing discount for verified trade clients under 1,000 SF but ordering regularly? (2) if a client hits both 1,000 SF and $5,000+ thresholds on the same order, which discount wins (15% or 10%)? Build cannot start without answers.
+- All prior standing blocked items carry.
+
+---
+
 ### 2026-08-05 — Open items board review; several ORCH asks closed; Rosetta updates in progress
 
 ## What I worked on / found
