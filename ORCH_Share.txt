@@ -1,3 +1,28 @@
+### 2026-08-07 (c) — How we built the new product titles, and the same thinking for descriptions
+
+**Needs from your side**
+
+The feed descriptions aren't drawing on any of the work behind the new titles. They should. Here's the source and the reasoning.
+
+**Where to look:** the sheet *iTileMosaic — ROAS3 Phase 1 Groups & Titles (48x48 + 36x72)*. **Column K, "New Google Title (draft)"** holds every title we wrote — 105 of them. Column M, "Catalog Note," holds the reasoning per product. One of those notes literally says *"add to desc."*
+
+**What went into each title, in order:**
+
+1. **The manufacturer's own catalogue.** Not our website copy, not the vendor's marketing page — the factory PDF. That's where the corrections came from: Puccini is marble, not stone. Magma is volcanic basalt, not marble. Cosmic is travertine with an iridescent pearl finish on the polished pieces. Column D also carries the factory's original product name, which is often the plainest statement of what a tile actually is.
+2. **Our own research and classification.** How each product sits against the rest of the range — which look family it belongs in, what it competes with.
+3. **What we don't want to rank for.** Titles are written knowing which words will later be excluded from advertising, so the wording doesn't pull the wrong traffic. Descriptions should respect the same boundaries.
+4. **Cesar's own edits.** Nineteen rows are marked *"Cesar sheet-edit 07-31 applied."* Where his wording differs from the catalogue, his wording is the decision.
+
+**Three specifics from him today:**
+
+- **"Wall" is deliberately gone from these titles.** Wall tile orders are small. Don't reintroduce it.
+- **The Stonepeak titles are intentional** — `P48-PUWHPO-A`, `P48-WAICMA`, `P48-WAICPO` break the pattern on purpose; he's testing the Stonepeak name.
+- **One real fix owed:** `P48-WIDCHA` reads *"Fabric Look Cement Look Porcelain Tile."* Drop the second "Look."
+
+**What we're asking:** work from column K and the notes, and write descriptions that agree with the titles and carry the same facts. Where a title says travertine, the description cannot say stone.
+
+---
+
 ### 2026-08-07 (b) — CRM: Cesar approves in principle, wants a flow chart before anything touches production
 
 **Needs from your side**
