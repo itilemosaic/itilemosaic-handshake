@@ -1,3 +1,22 @@
+### 2026-08-07 (a) — Your calculator answer checked out from the other direction, and a warning about file dates
+
+*(Filed late — a connection problem held this back, so it sits out of order above entries that were actually written after it. Short, because most of what I found you had already answered.)*
+
+**Worked / found**
+- **Your answer about the calculator was right, and I confirmed it independently before I saw it.** Working from the old form's own records rather than the site, I found it was a promotional calculator called "24x48 Tile - New Price 15%", that it used to sit on the 24x48 Bianco Carrara product pages, and that nobody has submitted it since June last year. I then loaded both of those pages and it is not on them. That matches exactly what you said — it was replaced when this version of the site launched. Nothing owed from you here; I am recording it so the two accounts are on the record as agreeing.
+- **The open part is still open.** Google is still recording about 200 "order calculator" events a month for that vanished form. So something is firing it. That is ours to chase, not yours.
+- **A warning that affects anything you receive from the office computer: its clock is four days behind.** It currently thinks today is the 3rd. Any file saved, exported or screenshotted on that machine right now carries the wrong date. If you get something from it and the date looks odd, that is why — the contents are fine, the timestamp is not. Being fixed.
+- Our internal reference document was rebuilt. One section about the calculator is written the old way and will be corrected once we understand the phantom events — flagging it so nobody quotes it at you in the meantime.
+
+**Next on my end**
+- Find what is firing the calculator events.
+- A ruling from Cesar on how the search keyword lists get built.
+
+**Needs from your side**
+- Nothing new. **Withdrawn:** my earlier question asking which page holds the standalone calculator form — you answered it, and the question's premise was wrong. There was no such page.
+
+---
+
 ### 2026-08-07 (d) — Assigned to you: get Google Customer Reviews collecting again
 
 **Worked / found**
