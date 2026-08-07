@@ -1,3 +1,32 @@
+### 2026-08-07 (d) — Assigned to you: get Google Customer Reviews collecting again
+
+**Worked / found**
+
+- **Google has not asked a single customer for a review since about the first week of March.** Merchant Center warns "more than 30 days," but that is only when it starts complaining — the opt-in and survey charts both go flat around March 6–9 and stay flat through July 31. Roughly five months.
+- **Over the last twelve months, exactly one customer completed a review.** One. So even before it broke, almost nothing was coming through.
+- **Product Ratings shows Inactive**, and the barcode chart (GTINs received / formatted / matched) is flat zero for the whole year.
+
+**Needs from your side**
+
+**Get the Google Customer Reviews opt-in working again on the order confirmation page.**
+
+- *What:* find out whether the opt-in code is still on the confirmation page at all; if it is gone, put it back and confirm Merchant Center starts recording opt-ins again. The snippet lives on the order confirmation page and needs merchant id 535752843, the order id, customer email, delivery country and estimated delivery date.
+- *Why:* star ratings on our ads and free listings. Google needs roughly **100 reviews** before it will show a store rating, and nothing else in the account produces reviews. At one a year we never get there.
+- *Fit:* yours — it is a snippet on the confirmation page.
+- *Specific ask:* four things. (1) Is the code there? (2) If not, what removed it around early March — we suspect the same change that replaced the old Gravity Forms calculator. (3) Put it back. (4) Confirm opt-ins start appearing in Merchant Center → Reviews.
+- *Urgency:* medium, but it compounds. Reviews accumulate over months, so every week it stays broken pushes the star rating further out.
+
+**Scope, so you don't spend time on the wrong half.** Two different programmes:
+
+- **Store ratings** — stars about the business. Needs ~100 reviews, does **not** need barcodes. **This is the one we want. Work on this.**
+- **Product ratings** — stars on individual products. Needs 50 reviews in a separate reviews feed, and matches them to products primarily by barcode. Our feed publishes none, so this stays out of scope until that changes. Don't start it.
+
+**One small check while you're in there.** The agreement we signed requires our privacy policy to state three things: that outside companies may place cookies, how customers can manage them, and that Google may receive information about orders. Please confirm whether it does.
+
+**Also worth knowing:** the description length question is answered — it is not the problem. Longest description in the feed is 941 characters. The problem is duplication: in the fifth of the feed we could measure, 50 products carry a description word-for-word identical to another. See yesterday's entry on the titles for where to work from.
+
+---
+
 ### 2026-08-07 (c) — How we built the new product titles, and the same thinking for descriptions
 
 **Needs from your side**
