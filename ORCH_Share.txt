@@ -1,3 +1,19 @@
+### 2026-08-07 — Trade-tier discounts: Cesar wants the margin math before he rules
+
+**Needs from your side**
+
+**Trade account tiers — Cesar is not answering the two discount questions yet. He wants the gross profit first.**
+
+Work out the gross profit on trade orders **with freight to California and New York included** — the two long lanes, so the numbers show the worst case rather than the average. Bring it to him **in his office** and he'll close both questions with you there.
+
+- *What:* gross profit per order, freight to CA and NY included
+- *Why:* he won't set a discount he can't afford. What's left after shipping is what decides whether the answer is 10%, 15%, or something else
+- *Fit:* yours — you hold the pricing and the order data
+- *Specific ask:* the numbers at the sizes the tiers turn on — under 1,000 SF, at 1,000 SF, and at $5,000+ — so one table answers both questions
+- *Urgency:* this is the ten-week blocker on the trade build, and it clears the moment you two sit down
+
+---
+
 ### 2026-08-03 — Google Ads now sees real order amounts, not placeholders; and our record of what paid Shopping costs was wrong by about 25 times
 
 **Worked / found**
