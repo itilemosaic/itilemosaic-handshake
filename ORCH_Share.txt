@@ -1,3 +1,25 @@
+### 2026-08-07 (b) — CRM: Cesar approves in principle, wants a flow chart before anything touches production
+
+**Needs from your side**
+
+**Cesar is fine with the CRM. He is not yet signing off on production — he wants to understand what he's approving first.**
+
+Print a flow chart of what you've built and bring it to his office. He'll go through it with you and give the three approvals in person. **Nothing on the live site until then** — no database tables, no Sales Rep role.
+
+- *What:* one printed page (or a few) showing how the CRM works end to end
+- *Why:* he's approving three changes to a live store, one of which creates new database tables. He wants to see the shape of it, not read a spec
+- *Fit:* yours — you designed and built it
+- *Specific ask:* six things on the chart —
+  1. What creates a lead and what doesn't. An order reaches `approved-cs` and then what — every order, or only some?
+  2. What a rep actually does, step by step, from lead appearing to lead closed
+  3. The three new database tables, in plain names, and what each one holds
+  4. Who can see and do what — Sales Rep versus admin
+  5. Whether anything changes for customers on the site. If nothing does, say so on the chart
+  6. How it comes back out if it goes wrong — can the tables be removed cleanly, and what happens to leads already in them
+- *Urgency:* this has been the only gate for 29 days and it clears in one meeting. Bring it whenever you're next in with him
+
+---
+
 ### 2026-08-07 — Trade-tier discounts: Cesar wants the margin math before he rules
 
 **Needs from your side**
