@@ -1,3 +1,36 @@
+### 2026-08-07 (e) — Your calculator answer holds up completely, the office clock is fixed, and I have one specific question for you
+
+**Worked / found**
+
+- **The office computer's clock is fixed.** It was four days behind this morning; it now reads the correct date and time, checked against two things outside the machine. So anything you receive from it from now on carries the right date. **But files it saved between roughly 31 July and today still carry wrong dates** — up to four days early. If something you already have looks oddly dated, that is why. The contents were always fine.
+
+- **Your answer about the old calculator is now confirmed from every direction I can reach.** You said the Gravity Forms calculator was replaced when this version of the site launched, and that the live one is the PHP calculator on product pages. Everything I did today agrees with you. I went further and checked whether anything on a product page could possibly be triggering the old measurement: I looked at the page as a logged-in admin and as an ordinary visitor, searched all 83 scripts the page loads, read the calculator's own code file, checked the tracking snippet, and used both calculators while watching exactly what they sent — twice, once with my own monitoring and once with Google's own debugging tool. **Nothing on the product pages can trigger it.** The old form is genuinely gone and nothing has replaced its role.
+
+- **Google is nonetheless still recording about 200 of these a month, and I could not find the cause.** What I did establish: Google names the exact product pages it is crediting, and they are all ordinary product pages, not any form page. The measurement started in **August 2025** — a month *after* the old form stopped being used, which is the opposite of what anyone expected. And the measurement rule itself is two years old, so it was not something newly built. My best explanation is that Google is generating these itself rather than your site sending them, but I want to be honest that this is a judgement, not something I proved.
+
+- **We have switched it off as a decision-making input.** Cesar's call. The measurement will keep counting in the background so we can see whether it ever fades to zero on its own, but it no longer influences how Google spends money. So even unexplained, it is no longer doing harm.
+
+- **One thing I got wrong earlier and corrected:** I had told Cesar that a newly added measurement was making up almost all of the account's recorded value. It is not — it sits in a reporting-only column and never reaches spending decisions. Recording it so the wrong version does not travel.
+
+**Next on my end**
+
+- Checking something unrelated and more urgent: the advertising spend has dropped very sharply, and I need to confirm whether that is real before anything else. Nothing needed from you on it.
+- Correcting the section of our internal reference document that describes the calculators, once the mystery above is closed. Right now it carries a clear warning that it is wrong, so nobody quotes it at you.
+- Still owed: a decision from Cesar on how the search keyword blocking lists get built.
+
+**Needs from your side**
+
+- **One question, and you are the only person who can answer it quickly.**
+  **What I need to know:** does any product page have a **pop-up or expanding panel containing a Gravity Forms field** — a quote request, a bulk-pricing enquiry, anything behind a button like "Order Sample" — that loads only when someone clicks it, rather than being in the page from the start?
+  **Why I am asking:** every check I ran reads the page as it first loads. A form that is injected only after a click would be invisible to all of it. That is the single remaining explanation I have not been able to rule out, and it would explain everything neatly.
+  **What I have already ruled out:** the form is not in the product page source, not in any script the page loads, and not triggered by either of the live calculators.
+  **What your answer changes:** a "no" means the cause is on Google's side and we stop looking at the site. A "yes" means we have found it, and it is a small fix.
+  **When I need it:** whenever suits — this is no longer urgent now that the measurement is switched off. A one-line answer is plenty.
+
+- Nothing else new. All your existing open items with Cesar still stand, including the CRM approvals, the trade account tier questions, and the Cortina Stone decisions.
+
+---
+
 ### 2026-08-07 (a) — Your calculator answer checked out from the other direction, and a warning about file dates
 
 *(Filed late — a connection problem held this back, so it sits out of order above entries that were actually written after it. Short, because most of what I found you had already answered.)*
